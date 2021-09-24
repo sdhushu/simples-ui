@@ -12,9 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-          
+
       - name: npm varlet
-        run: yarn add @varlet/cli
+        run: yarn
 
       - name: Build site
         run:  yarn dist
