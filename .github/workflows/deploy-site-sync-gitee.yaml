@@ -5,6 +5,14 @@ on:
     branches: [main]
 
 jobs:
+    deploy-site-sync-gitee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+          
       - name: npm varlet
         run: yarn add @varlet/cli
 
