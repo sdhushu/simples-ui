@@ -1,0 +1,1 @@
+.simple-tab { padding: 0 20px; font-size: 14px; /* color: #fff; */ transition: 2s linear; cursor: pointer; white-space: nowrap;}.simple-wrap { height: 100%; display: flex; position: relative; align-items: center;}.simple-disabled { pointer-events: none;}

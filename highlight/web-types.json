@@ -1,0 +1,1884 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json",
+  "framework": "vue",
+  "version": "1.0.0",
+  "name": "VARLET",
+  "contributions": {
+    "html": {
+      "tags": [
+        {
+          "name": "var-badge",
+          "attributes": [
+            {
+              "name": "type",
+              "description": "类型， 可选值为 `default` `primary` `info` `success` `warning` `danger`",
+              "default": "default",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "dot",
+              "description": "徽标是否为小圆点",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "value",
+              "description": "徽标中显示的值（当`dot`为`false`时生效）",
+              "default": "0",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "max-value",
+              "description": "徽标中显示的最大值，当`value`大于`max-value`时会显示`max-value+`(当`value`与`max-value`都存在时生效)",
+              "default": "-",
+              "value": {
+                "type": "number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "position",
+              "description": "徽标标签中有其他标签时定义徽标在其他标签上的位置，可选值`right-top` `top-bottom` `left-top` `left-bottom`",
+              "default": "right-top",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "description": "自定义徽标颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon",
+              "description": "自定义徽标中图标的内容（优先级高于`value`）",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [],
+          "slots": [
+            {
+              "name": "default",
+              "description": "徽标内容"
+            }
+          ]
+        },
+        {
+          "name": "var-button",
+          "attributes": [
+            {
+              "name": "type",
+              "description": "类型， 可选值为 `default` `primary` `info` `success` `warning` `danger`",
+              "default": "default",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "size",
+              "description": "尺寸， 可选值为 `normal` `mini` `small` `large`",
+              "default": "normal",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading",
+              "description": "加载状态",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading-radius",
+              "description": "loading的半径，只作用于 `loading-type=\"circle\"` 时",
+              "default": "12",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading-type",
+              "description": "loading的类型，可选值为 `circle` `wave` `cube` `rect` `disappear`",
+              "default": "circle",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading-size",
+              "description": "loading的尺寸，可选值为 `large` `normal` `small` `mini` 不作用于 `loading-type=\"circle\"` 时",
+              "default": "normal",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "round",
+              "description": "是否是圆形按钮",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "block",
+              "description": "是否是块级元素",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "text",
+              "description": "是否是文字按钮",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "outline",
+              "description": "是否使用外边框",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled",
+              "description": "禁用状态",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "ripple",
+              "description": "是否使用水波纹",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "text-color",
+              "description": "文字颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "description": "背景颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击按钮时触发， 在 `loading` 或 `disabled` 状态为 `true` 时不触发"
+            },
+            {
+              "name": "touchstart",
+              "description": "触摸手指压下按钮时触发， 在 `loading` 或 `disabled` 状态为 `true` 时不触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "default",
+              "description": "按钮内容"
+            }
+          ]
+        },
+        {
+          "name": "var-card",
+          "attributes": [
+            {
+              "name": "title",
+              "description": "卡片标题",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "subtitle",
+              "description": "卡片副标题",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "description",
+              "description": "卡片描述",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "elevation",
+              "description": "卡片阴影程度等级",
+              "default": "2",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "src",
+              "description": "图片地址",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "fit",
+              "description": "填充模式, 可选值为 `fill` `contain` `cover` `none` `scale-down`",
+              "default": "cover",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "alt",
+              "description": "替代文本",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "height",
+              "description": "图片高度",
+              "default": "-",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "ripple",
+              "description": "是否开启水波",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击卡片时触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "image",
+              "description": "自定义图片"
+            },
+            {
+              "name": "title",
+              "description": "自定义标题"
+            },
+            {
+              "name": "subtitle",
+              "description": "自定义副标题"
+            },
+            {
+              "name": "description",
+              "description": "自定义描述"
+            },
+            {
+              "name": "extra",
+              "description": "自定义底部内容"
+            }
+          ]
+        },
+        {
+          "name": "var-cell",
+          "attributes": [
+            {
+              "name": "title",
+              "description": "单元格标题",
+              "default": "-",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon",
+              "description": "左侧图标名称",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "desc",
+              "description": "单元格描述",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "border",
+              "description": "是否显示边框",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "icon-class",
+              "description": "图标额外类名",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "title-class",
+              "description": "标题额外类名",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "desc-class",
+              "description": "描述额外类名",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "extra-class",
+              "description": "右侧内容额外类名",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [],
+          "slots": [
+            {
+              "name": "default",
+              "description": "cell的内容"
+            },
+            {
+              "name": "icon",
+              "description": "自定义左侧icon区域"
+            },
+            {
+              "name": "desc",
+              "description": "描述的内容"
+            },
+            {
+              "name": "extra",
+              "description": "自定义右侧区域内容"
+            }
+          ]
+        },
+        {
+          "name": "var-chip",
+          "attributes": [
+            {
+              "name": "type",
+              "description": "类型，可选值为 `default` `primary` `info` `success` `warning` `danger`",
+              "default": "default",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "size",
+              "description": "尺寸， 可选值为 `normal` `mini` `small` `large`",
+              "default": "normal",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "plain",
+              "description": "是否为空心样式",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "round",
+              "description": "是否为圆角样式",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "block",
+              "description": "是否为块级样式",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "closeable",
+              "description": "是否为可关闭纸片",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "close-name",
+              "description": "自定义可关闭纸片的图标，必须在`closeable`为`true`的条件下才能用",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "description": "纸片颜色",
+              "default": "_",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "text-color",
+              "description": "文本颜色，优先级高于`color`属性",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "close",
+              "description": "点击关闭按钮时触发，只有在显示关闭按钮的时候才能使用"
+            }
+          ],
+          "slots": [
+            {
+              "name": "default",
+              "description": "纸片内容"
+            },
+            {
+              "name": "left",
+              "description": "插入至纸片左侧的内容"
+            },
+            {
+              "name": "right",
+              "description": "插入至纸片右侧的内容"
+            }
+          ]
+        },
+        {
+          "name": "var-dialog",
+          "attributes": [
+            {
+              "name": "v-model:show",
+              "description": "是否显示对话框",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "title",
+              "description": "对话框标题",
+              "default": "提示",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "message",
+              "description": "对话框内容",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "message-align",
+              "description": "对话框内容文字对齐方式，可选值 `center`, `left`, `right`",
+              "default": "left",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "confirm-button",
+              "description": "是否显示确认按钮",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "cancel-button",
+              "description": "是否显示取消按钮",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "confirm-button-text",
+              "description": "确认按钮文字",
+              "default": "确认",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "cancel-button-text",
+              "description": "取消按钮文字",
+              "default": "取消",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "confirm-button-text-color",
+              "description": "确认按钮文字颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "cancel-button-text-color",
+              "description": "取消按钮文字颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "confirm-button-color",
+              "description": "确认按钮背景颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "cancel-button-color",
+              "description": "取消按钮背景颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "overlay",
+              "description": "是否显示遮罩层",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "overlay-class",
+              "description": "自定义遮罩层的class",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "overlay-style",
+              "description": "自定义遮罩层的style",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "lock-scroll",
+              "description": "是否禁止滚动穿透，禁止时滚动弹出层不会引发body的滚动",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "close-on-click-overlay",
+              "description": "是否点击遮罩层关闭弹出层",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "teleport",
+              "description": "弹出层挂载的位置",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "open",
+              "description": "打开对话框时触发"
+            },
+            {
+              "name": "opened",
+              "description": "打开对话框动画结束时触发"
+            },
+            {
+              "name": "before-close",
+              "description": "对话框关闭前触发，会阻止关闭"
+            },
+            {
+              "name": "close",
+              "description": "关闭对话框时触发"
+            },
+            {
+              "name": "closed",
+              "description": "关闭对话框动画结束时触发"
+            },
+            {
+              "name": "confirm",
+              "description": "确认时触发"
+            },
+            {
+              "name": "cancel",
+              "description": "取消时触发"
+            },
+            {
+              "name": "click-overlay",
+              "description": "点击遮罩层时触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "default",
+              "description": "对话框主要内容"
+            },
+            {
+              "name": "title",
+              "description": "对话框标题"
+            }
+          ]
+        },
+        {
+          "name": "var-divider",
+          "attributes": [
+            {
+              "name": "inset",
+              "description": "设置缩进距离，正负号可控制缩进方向。当传递`true`时默认缩进为`72px`",
+              "default": "false",
+              "value": {
+                "type": "boolean | number | string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "vertical",
+              "description": "是否垂直",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "dashed",
+              "description": "虚线",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "description",
+              "description": "分割线的文字描述",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "margin",
+              "description": "设置分割线样式的`margin`属性",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [],
+          "slots": [
+            {
+              "name": "default",
+              "description": "自定义分割线文字描述内容"
+            }
+          ]
+        },
+        {
+          "name": "var-image",
+          "attributes": [
+            {
+              "name": "src",
+              "description": "图片地址",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "fit",
+              "description": "填充模式, 可选值为 `fill` `contain` `cover` `none` `scale-down`",
+              "default": "fill",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "alt",
+              "description": "替代文本",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "width",
+              "description": "图片宽度",
+              "default": "-",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "height",
+              "description": "图片高度",
+              "default": "-",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "radius",
+              "description": "图片圆角",
+              "default": "-",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "lazy",
+              "description": "是否开启懒加载",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading",
+              "description": "当开启懒加载时, 加载中显示的图片",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "error",
+              "description": "当开启懒加载时, 加载失败显示的图片",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "ripple",
+              "description": "是否开启水波",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "block",
+              "description": "是否是块级元素",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击图片时触发"
+            },
+            {
+              "name": "load",
+              "description": "图片成功加载时触发(懒加载模式下失败时会多次尝试加载图片，只会在成功加载时触发)"
+            },
+            {
+              "name": "error",
+              "description": "图片失败加载时触发(懒加载模式下失败时会多次尝试加载图片，只会在尝试次数结束时触发)"
+            }
+          ],
+          "slots": []
+        },
+        {
+          "name": "var-image-preview",
+          "attributes": [
+            {
+              "name": "show",
+              "description": "是否显示",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "images",
+              "description": "需要预览的图片 URL数组",
+              "default": "[]",
+              "value": {
+                "type": "string[]",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "current",
+              "description": "图片预览起始的 URL",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "zoom",
+              "description": "双击放大倍数",
+              "default": "2",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "closeable",
+              "description": "是否显示关闭按钮",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loop",
+              "description": "是否开启循环播放",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "indicator",
+              "description": "是否显示分页",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "lock-scroll",
+              "description": "锁定滚动",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "teleport",
+              "description": "弹出层挂载的位置",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "change",
+              "description": "切换图片时的回调函数，回调参数为当前索引"
+            },
+            {
+              "name": "open",
+              "description": "打开image-preview时触发"
+            },
+            {
+              "name": "opened",
+              "description": "打开image-preview动画结束时触发"
+            },
+            {
+              "name": "close",
+              "description": "关闭image-preview时触发"
+            },
+            {
+              "name": "closed",
+              "description": "关闭image-preview动画结束时触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "indicator",
+              "description": "分页指示器"
+            },
+            {
+              "name": "close-icon",
+              "description": "关闭按钮"
+            }
+          ]
+        },
+        {
+          "name": "var-input",
+          "attributes": [
+            {
+              "name": "v-model",
+              "description": "绑定的值",
+              "default": "-",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "placeholder",
+              "description": "占位符",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "type",
+              "description": "输入框类型, 可选值为 `text` `password`",
+              "default": "text",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "maxlength",
+              "description": "最大长度",
+              "default": "-",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "textarea",
+              "description": "是否是文本域",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "rows",
+              "description": "文本域的显示行数",
+              "default": "8",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "line",
+              "description": "是否显示分割线",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "hint",
+              "description": "是否使用占位符作为提示",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "text-color",
+              "description": "文字颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "focus-color",
+              "description": "聚焦时的主要颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "blur-color",
+              "description": "失焦时的主要颜色",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "readonly",
+              "description": "是否只读",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled",
+              "description": "是否禁用",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "clearable",
+              "description": "是否可清除",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "resize",
+              "description": "文本域是否可以拖动调整尺寸",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "validate-trigger",
+              "description": "触发验证的时机， 可选值为 `onFocus` `onBlur` `onChange` `onClick` `onClear` `onInput`",
+              "default": "['onInput', 'onClear']",
+              "value": {
+                "type": "ValidateTriggers[]",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "rules",
+              "description": "验证规则，返回`true`表示验证通过，其余的值则转换为文本作为用户提示",
+              "default": "-",
+              "value": {
+                "type": "Array<(v: string | number) => any>",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "focus",
+              "description": "聚焦时触发"
+            },
+            {
+              "name": "blur",
+              "description": "失焦时触发"
+            },
+            {
+              "name": "click",
+              "description": "点击时触发"
+            },
+            {
+              "name": "clear",
+              "description": "清除时触发"
+            },
+            {
+              "name": "input",
+              "description": "输入时触发"
+            },
+            {
+              "name": "change",
+              "description": "更新时触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "prepend-icon",
+              "description": "前置图标"
+            },
+            {
+              "name": "append-icon",
+              "description": "后置图标"
+            }
+          ]
+        },
+        {
+          "name": "var-loading",
+          "attributes": [
+            {
+              "name": "color",
+              "description": "loading 的颜色",
+              "default": "currentColor",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "type",
+              "description": "loading 的类型，可选值为 `circle` `wave` `cube` `rect` `disappear`",
+              "default": "circle",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "size",
+              "description": "loading 的大小，可选值位 `large` `normal` `small` `mini`",
+              "default": "normal",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [],
+          "slots": []
+        },
+        {
+          "name": "var-skeleton",
+          "attributes": [
+            {
+              "name": "loading",
+              "description": "加载状态，设置为 `true` 开启骨架屏",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "title",
+              "description": "是否显示标题",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "card",
+              "description": "是否显示卡片",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "avatar",
+              "description": "是否显示头像",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "fullscreen",
+              "description": "是否开启全屏模式",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "title-width",
+              "description": "标题宽度",
+              "default": "50%",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "card-height",
+              "description": "卡片高度",
+              "default": "160px",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "avatar-size",
+              "description": "头像尺寸",
+              "default": "34px",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "rows",
+              "description": "段落行数",
+              "default": "3",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "rows-width",
+              "description": "段落每一行的宽度",
+              "default": "['12px', '12px', '12px']",
+              "value": {
+                "type": "number[] | string[]",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [],
+          "slots": [
+            {
+              "name": "default",
+              "description": "加载成功后显示的内容"
+            }
+          ]
+        },
+        {
+          "name": "var-snackbar",
+          "attributes": [
+            {
+              "name": "v-model:show",
+              "description": "是否显示`Snackbar`",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "type",
+              "description": "`Snackbar`类型，可选值为`success, warning, info, error, loading`之一",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "position",
+              "description": "`Snackbar`位置，可选值为`top, center, bottom`之一",
+              "default": "top",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "duration",
+              "description": "显示时长",
+              "default": "3000",
+              "value": {
+                "type": "number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "content",
+              "description": "自定义内容",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "content-class",
+              "description": "自定义内容的类名",
+              "default": "-",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "vertical",
+              "description": "是否启用竖直排列方式",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading-type",
+              "description": "加载动画类型(见`Loading`组件)",
+              "default": "circle",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading-size",
+              "description": "加载动画大小(见`Loading`组件)",
+              "default": "normal",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "lock-scroll",
+              "description": "是否禁止滚动穿透",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "forbid-click",
+              "description": "是否禁止穿透点击",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "teleport",
+              "description": "弹出层挂载的位置",
+              "default": "body",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "open",
+              "description": "打开`Snackbar`时触发"
+            },
+            {
+              "name": "opened",
+              "description": "打开`Snackbar`动画结束时触发"
+            },
+            {
+              "name": "close",
+              "description": "关闭`Snackbar`时触发"
+            },
+            {
+              "name": "closed",
+              "description": "关闭`Snackbar`动画结束时触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "default",
+              "description": "`Snackbar` 内容"
+            },
+            {
+              "name": "action",
+              "description": "`Snackbar` 右边动作区"
+            }
+          ]
+        },
+        {
+          "name": "var-switch",
+          "attributes": [
+            {
+              "name": "v-model",
+              "description": "开关选中状态",
+              "default": "false",
+              "value": {
+                "type": "any",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "active-value",
+              "description": "开关打开时的值",
+              "default": "true",
+              "value": {
+                "type": "any",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "inactive-value",
+              "description": "开关关闭时的值",
+              "default": "false",
+              "value": {
+                "type": "any",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled",
+              "description": "是否禁用",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "readonly",
+              "description": "是否只读",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading",
+              "description": "是否为加载状态",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "ripple",
+              "description": "是否启用水波纹",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "description": "打开状态下的颜色",
+              "default": "#2979ff",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loading-color",
+              "description": "加载图标的颜色",
+              "default": "#fff",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "close-color",
+              "description": "关闭状态下的颜色",
+              "default": "#fff",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "size",
+              "description": "switch的大小",
+              "default": "20",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "rules",
+              "description": "校验规则",
+              "default": "-",
+              "value": {
+                "type": "array",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击时触发"
+            },
+            {
+              "name": "change",
+              "description": "开关状态切换时触发"
+            }
+          ],
+          "slots": []
+        },
+        {
+          "name": "var-tab",
+          "attributes": [
+            {
+              "name": "name",
+              "description": "选项卡的名字",
+              "default": "index",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled",
+              "description": "是否禁用选项卡",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击选项卡时触发, 在 `disabled` 状态为 `true` 时不触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "default",
+              "description": "选项卡内容"
+            }
+          ]
+        },
+        {
+          "name": "var-tab-item",
+          "attributes": [
+            {
+              "name": "name",
+              "description": "视图的名字",
+              "default": "index",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [],
+          "slots": [
+            {
+              "name": "default",
+              "description": "视图的内容"
+            }
+          ]
+        },
+        {
+          "name": "var-tabs",
+          "attributes": [
+            {
+              "name": "v-model:active",
+              "description": "激活的选项卡标识, 优先匹配name，其次是index",
+              "default": "default",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "layout-direction",
+              "description": "选项卡组的布局方向， 可选值为 `horizontal` `vertical`",
+              "default": "horizontal",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "item-direction",
+              "description": "选项卡的布局方向，可选值为 `horizontal` `vertical`",
+              "default": "horizontal",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "fixed-bottom",
+              "description": "是否固定在窗口底部, 可用做底部导航",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "color",
+              "description": "选项卡的背景颜色",
+              "default": "#fff",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "active-color",
+              "description": "选项卡激活的主要颜色",
+              "default": "#2979ff",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "inactive-color",
+              "description": "选项卡未激活的主要颜色",
+              "default": "#646566",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "disabled-color",
+              "description": "选项卡禁用时的主要颜色",
+              "default": "#e0e0e0",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "indicator-color",
+              "description": "选项卡激活指示器的颜色",
+              "default": "#2979ff",
+              "value": {
+                "type": "string",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "indicator-size",
+              "description": "选项卡激活指示器的尺寸",
+              "default": "2px",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "elevation",
+              "description": "是否启用阴影",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "sticky",
+              "description": "是否启用粘性布局",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "offset-top",
+              "description": "吸顶距离",
+              "default": "0",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [
+            {
+              "name": "click",
+              "description": "点击选项卡时触发, 在选项卡`disabled` 状态为 `true` 时不触发"
+            },
+            {
+              "name": "change",
+              "description": "切换选项卡时触发"
+            }
+          ],
+          "slots": [
+            {
+              "name": "default",
+              "description": "选项卡组的内容"
+            }
+          ]
+        },
+        {
+          "name": "var-tabs-items",
+          "attributes": [
+            {
+              "name": "v-model:active",
+              "description": "激活的选项卡的名字",
+              "default": "-",
+              "value": {
+                "type": "string | number",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "can-swipe",
+              "description": "是否允许滑动切换",
+              "default": "true",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            },
+            {
+              "name": "loop",
+              "description": "是否允许循环切换",
+              "default": "false",
+              "value": {
+                "type": "boolean",
+                "kind": "expression"
+              }
+            }
+          ],
+          "events": [],
+          "slots": [
+            {
+              "name": "default",
+              "description": "视图组的内容"
+            }
+          ]
+        }
+      ],
+      "types-syntax": "typescript"
+    }
+  }
+}

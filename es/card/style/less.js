@@ -1,0 +1,1 @@
+import '../CardSfc.css'
