@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "varlet-cli dev",
     "build": "varlet-cli compile",
+    "dist":"varlet-cli build",
     "serve": "vite preview"
   },
   "dependencies": {
