@@ -1,0 +1,1 @@
+.simple-tabs { width: auto; height: 60px; /* padding-left: 55px; */ /* background-color: aqua; */ display: flex;}.simple-line { width: 0; height: 3px; background-color: #409eff; transition: width 1s, height 1s, transform 1s;}

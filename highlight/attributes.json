@@ -1,0 +1,654 @@
+{
+  "var-badge/type": {
+    "type": "string",
+    "description": "类型， 可选值为 `default` `primary` `info` `success` `warning` `danger` 默认值：default"
+  },
+  "var-badge/dot": {
+    "type": "boolean",
+    "description": "徽标是否为小圆点 默认值：false"
+  },
+  "var-badge/value": {
+    "type": "string | number",
+    "description": "徽标中显示的值（当`dot`为`false`时生效） 默认值：0"
+  },
+  "var-badge/max-value": {
+    "type": "number",
+    "description": "徽标中显示的最大值，当`value`大于`max-value`时会显示`max-value+`(当`value`与`max-value`都存在时生效) 默认值：-"
+  },
+  "var-badge/position": {
+    "type": "string",
+    "description": "徽标标签中有其他标签时定义徽标在其他标签上的位置，可选值`right-top` `top-bottom` `left-top` `left-bottom` 默认值：right-top"
+  },
+  "var-badge/color": {
+    "type": "string",
+    "description": "自定义徽标颜色 默认值：-"
+  },
+  "var-badge/icon": {
+    "type": "string",
+    "description": "自定义徽标中图标的内容（优先级高于`value`） 默认值：-"
+  },
+  "var-button/type": {
+    "type": "string",
+    "description": "类型， 可选值为 `default` `primary` `info` `success` `warning` `danger` 默认值：default"
+  },
+  "var-button/size": {
+    "type": "string",
+    "description": "尺寸， 可选值为 `normal` `mini` `small` `large` 默认值：normal"
+  },
+  "var-button/loading": {
+    "type": "boolean",
+    "description": "加载状态 默认值：false"
+  },
+  "var-button/loading-radius": {
+    "type": "string | number",
+    "description": "loading的半径，只作用于 `loading-type=\"circle\"` 时 默认值：12"
+  },
+  "var-button/loading-type": {
+    "type": "string",
+    "description": "loading的类型，可选值为 `circle` `wave` `cube` `rect` `disappear` 默认值：circle"
+  },
+  "var-button/loading-size": {
+    "type": "string",
+    "description": "loading的尺寸，可选值为 `large` `normal` `small` `mini` 不作用于 `loading-type=\"circle\"` 时 默认值：normal"
+  },
+  "var-button/round": {
+    "type": "boolean",
+    "description": "是否是圆形按钮 默认值：false"
+  },
+  "var-button/block": {
+    "type": "boolean",
+    "description": "是否是块级元素 默认值：false"
+  },
+  "var-button/text": {
+    "type": "boolean",
+    "description": "是否是文字按钮 默认值：false"
+  },
+  "var-button/outline": {
+    "type": "boolean",
+    "description": "是否使用外边框 默认值：false"
+  },
+  "var-button/disabled": {
+    "type": "boolean",
+    "description": "禁用状态 默认值：false"
+  },
+  "var-button/ripple": {
+    "type": "boolean",
+    "description": "是否使用水波纹 默认值：true"
+  },
+  "var-button/text-color": {
+    "type": "string",
+    "description": "文字颜色 默认值：-"
+  },
+  "var-button/color": {
+    "type": "string",
+    "description": "背景颜色 默认值：-"
+  },
+  "var-card/title": {
+    "type": "string",
+    "description": "卡片标题 默认值：-"
+  },
+  "var-card/subtitle": {
+    "type": "string",
+    "description": "卡片副标题 默认值：-"
+  },
+  "var-card/description": {
+    "type": "string",
+    "description": "卡片描述 默认值：-"
+  },
+  "var-card/elevation": {
+    "type": "string | number",
+    "description": "卡片阴影程度等级 默认值：2"
+  },
+  "var-card/src": {
+    "type": "string",
+    "description": "图片地址 默认值：-"
+  },
+  "var-card/fit": {
+    "type": "string",
+    "description": "填充模式, 可选值为 `fill` `contain` `cover` `none` `scale-down` 默认值：cover"
+  },
+  "var-card/alt": {
+    "type": "string",
+    "description": "替代文本 默认值：-"
+  },
+  "var-card/height": {
+    "type": "string | number",
+    "description": "图片高度 默认值：-"
+  },
+  "var-card/ripple": {
+    "type": "boolean",
+    "description": "是否开启水波 默认值：false"
+  },
+  "var-cell/title": {
+    "type": "string | number",
+    "description": "单元格标题 默认值：-"
+  },
+  "var-cell/icon": {
+    "type": "string",
+    "description": "左侧图标名称 默认值：-"
+  },
+  "var-cell/desc": {
+    "type": "string",
+    "description": "单元格描述 默认值：-"
+  },
+  "var-cell/border": {
+    "type": "boolean",
+    "description": "是否显示边框 默认值：false"
+  },
+  "var-cell/icon-class": {
+    "type": "string",
+    "description": "图标额外类名 默认值：-"
+  },
+  "var-cell/title-class": {
+    "type": "string",
+    "description": "标题额外类名 默认值：-"
+  },
+  "var-cell/desc-class": {
+    "type": "string",
+    "description": "描述额外类名 默认值：-"
+  },
+  "var-cell/extra-class": {
+    "type": "string",
+    "description": "右侧内容额外类名 默认值：-"
+  },
+  "var-chip/type": {
+    "type": "string",
+    "description": "类型，可选值为 `default` `primary` `info` `success` `warning` `danger` 默认值：default"
+  },
+  "var-chip/size": {
+    "type": "string",
+    "description": "尺寸， 可选值为 `normal` `mini` `small` `large` 默认值：normal"
+  },
+  "var-chip/plain": {
+    "type": "boolean",
+    "description": "是否为空心样式 默认值：false"
+  },
+  "var-chip/round": {
+    "type": "boolean",
+    "description": "是否为圆角样式 默认值：true"
+  },
+  "var-chip/block": {
+    "type": "boolean",
+    "description": "是否为块级样式 默认值：false"
+  },
+  "var-chip/closeable": {
+    "type": "boolean",
+    "description": "是否为可关闭纸片 默认值：false"
+  },
+  "var-chip/close-name": {
+    "type": "string",
+    "description": "自定义可关闭纸片的图标，必须在`closeable`为`true`的条件下才能用 默认值：-"
+  },
+  "var-chip/color": {
+    "type": "string",
+    "description": "纸片颜色 默认值：_"
+  },
+  "var-chip/text-color": {
+    "type": "string",
+    "description": "文本颜色，优先级高于`color`属性 默认值：-"
+  },
+  "var-dialog/v-model:show": {
+    "type": "boolean",
+    "description": "是否显示对话框 默认值：false"
+  },
+  "var-dialog/title": {
+    "type": "string",
+    "description": "对话框标题 默认值：提示"
+  },
+  "var-dialog/message": {
+    "type": "string",
+    "description": "对话框内容 默认值：-"
+  },
+  "var-dialog/message-align": {
+    "type": "string",
+    "description": "对话框内容文字对齐方式，可选值 `center`, `left`, `right` 默认值：left"
+  },
+  "var-dialog/confirm-button": {
+    "type": "boolean",
+    "description": "是否显示确认按钮 默认值：true"
+  },
+  "var-dialog/cancel-button": {
+    "type": "boolean",
+    "description": "是否显示取消按钮 默认值：true"
+  },
+  "var-dialog/confirm-button-text": {
+    "type": "string",
+    "description": "确认按钮文字 默认值：确认"
+  },
+  "var-dialog/cancel-button-text": {
+    "type": "string",
+    "description": "取消按钮文字 默认值：取消"
+  },
+  "var-dialog/confirm-button-text-color": {
+    "type": "string",
+    "description": "确认按钮文字颜色 默认值：-"
+  },
+  "var-dialog/cancel-button-text-color": {
+    "type": "string",
+    "description": "取消按钮文字颜色 默认值：-"
+  },
+  "var-dialog/confirm-button-color": {
+    "type": "string",
+    "description": "确认按钮背景颜色 默认值：-"
+  },
+  "var-dialog/cancel-button-color": {
+    "type": "string",
+    "description": "取消按钮背景颜色 默认值：-"
+  },
+  "var-dialog/overlay": {
+    "type": "boolean",
+    "description": "是否显示遮罩层 默认值：true"
+  },
+  "var-dialog/overlay-class": {
+    "type": "string",
+    "description": "自定义遮罩层的class 默认值：-"
+  },
+  "var-dialog/overlay-style": {
+    "type": "string",
+    "description": "自定义遮罩层的style 默认值：-"
+  },
+  "var-dialog/lock-scroll": {
+    "type": "boolean",
+    "description": "是否禁止滚动穿透，禁止时滚动弹出层不会引发body的滚动 默认值：true"
+  },
+  "var-dialog/close-on-click-overlay": {
+    "type": "boolean",
+    "description": "是否点击遮罩层关闭弹出层 默认值：true"
+  },
+  "var-dialog/teleport": {
+    "type": "string",
+    "description": "弹出层挂载的位置 默认值：-"
+  },
+  "var-divider/inset": {
+    "type": "boolean | number | string",
+    "description": "设置缩进距离，正负号可控制缩进方向。当传递`true`时默认缩进为`72px` 默认值：false"
+  },
+  "var-divider/vertical": {
+    "type": "boolean",
+    "description": "是否垂直 默认值：false"
+  },
+  "var-divider/dashed": {
+    "type": "boolean",
+    "description": "虚线 默认值：false"
+  },
+  "var-divider/description": {
+    "type": "string",
+    "description": "分割线的文字描述 默认值：-"
+  },
+  "var-divider/margin": {
+    "type": "string",
+    "description": "设置分割线样式的`margin`属性 默认值：-"
+  },
+  "var-image/src": {
+    "type": "string",
+    "description": "图片地址 默认值：-"
+  },
+  "var-image/fit": {
+    "type": "string",
+    "description": "填充模式, 可选值为 `fill` `contain` `cover` `none` `scale-down` 默认值：fill"
+  },
+  "var-image/alt": {
+    "type": "string",
+    "description": "替代文本 默认值：-"
+  },
+  "var-image/width": {
+    "type": "string | number",
+    "description": "图片宽度 默认值：-"
+  },
+  "var-image/height": {
+    "type": "string | number",
+    "description": "图片高度 默认值：-"
+  },
+  "var-image/radius": {
+    "type": "string | number",
+    "description": "图片圆角 默认值：-"
+  },
+  "var-image/lazy": {
+    "type": "boolean",
+    "description": "是否开启懒加载 默认值：false"
+  },
+  "var-image/loading": {
+    "type": "string",
+    "description": "当开启懒加载时, 加载中显示的图片 默认值：-"
+  },
+  "var-image/error": {
+    "type": "string",
+    "description": "当开启懒加载时, 加载失败显示的图片 默认值：-"
+  },
+  "var-image/ripple": {
+    "type": "boolean",
+    "description": "是否开启水波 默认值：false"
+  },
+  "var-image/block": {
+    "type": "boolean",
+    "description": "是否是块级元素 默认值：true"
+  },
+  "var-image-preview/show": {
+    "type": "boolean",
+    "description": "是否显示 默认值：false"
+  },
+  "var-image-preview/images": {
+    "type": "string[]",
+    "description": "需要预览的图片 URL数组 默认值：[]"
+  },
+  "var-image-preview/current": {
+    "type": "string",
+    "description": "图片预览起始的 URL 默认值：-"
+  },
+  "var-image-preview/zoom": {
+    "type": "string | number",
+    "description": "双击放大倍数 默认值：2"
+  },
+  "var-image-preview/closeable": {
+    "type": "boolean",
+    "description": "是否显示关闭按钮 默认值：false"
+  },
+  "var-image-preview/loop": {
+    "type": "boolean",
+    "description": "是否开启循环播放 默认值：true"
+  },
+  "var-image-preview/indicator": {
+    "type": "boolean",
+    "description": "是否显示分页 默认值：true"
+  },
+  "var-image-preview/lock-scroll": {
+    "type": "boolean",
+    "description": "锁定滚动 默认值：true"
+  },
+  "var-image-preview/teleport": {
+    "type": "string",
+    "description": "弹出层挂载的位置 默认值：-"
+  },
+  "var-input/v-model": {
+    "type": "string | number",
+    "description": "绑定的值 默认值：-"
+  },
+  "var-input/placeholder": {
+    "type": "string",
+    "description": "占位符 默认值：-"
+  },
+  "var-input/type": {
+    "type": "string",
+    "description": "输入框类型, 可选值为 `text` `password` 默认值：text"
+  },
+  "var-input/maxlength": {
+    "type": "string | number",
+    "description": "最大长度 默认值：-"
+  },
+  "var-input/textarea": {
+    "type": "boolean",
+    "description": "是否是文本域 默认值：false"
+  },
+  "var-input/rows": {
+    "type": "string | number",
+    "description": "文本域的显示行数 默认值：8"
+  },
+  "var-input/line": {
+    "type": "boolean",
+    "description": "是否显示分割线 默认值：true"
+  },
+  "var-input/hint": {
+    "type": "boolean",
+    "description": "是否使用占位符作为提示 默认值：true"
+  },
+  "var-input/text-color": {
+    "type": "string",
+    "description": "文字颜色 默认值：-"
+  },
+  "var-input/focus-color": {
+    "type": "string",
+    "description": "聚焦时的主要颜色 默认值：-"
+  },
+  "var-input/blur-color": {
+    "type": "string",
+    "description": "失焦时的主要颜色 默认值：-"
+  },
+  "var-input/readonly": {
+    "type": "boolean",
+    "description": "是否只读 默认值：false"
+  },
+  "var-input/disabled": {
+    "type": "boolean",
+    "description": "是否禁用 默认值：false"
+  },
+  "var-input/clearable": {
+    "type": "boolean",
+    "description": "是否可清除 默认值：false"
+  },
+  "var-input/resize": {
+    "type": "boolean",
+    "description": "文本域是否可以拖动调整尺寸 默认值：false"
+  },
+  "var-input/validate-trigger": {
+    "type": "ValidateTriggers[]",
+    "description": "触发验证的时机， 可选值为 `onFocus` `onBlur` `onChange` `onClick` `onClear` `onInput` 默认值：['onInput', 'onClear']"
+  },
+  "var-input/rules": {
+    "type": "Array<(v: string | number) => any>",
+    "description": "验证规则，返回`true`表示验证通过，其余的值则转换为文本作为用户提示 默认值：-"
+  },
+  "var-loading/color": {
+    "type": "string",
+    "description": "loading 的颜色 默认值：currentColor"
+  },
+  "var-loading/type": {
+    "type": "string",
+    "description": "loading 的类型，可选值为 `circle` `wave` `cube` `rect` `disappear` 默认值：circle"
+  },
+  "var-loading/size": {
+    "type": "string",
+    "description": "loading 的大小，可选值位 `large` `normal` `small` `mini` 默认值：normal"
+  },
+  "var-skeleton/loading": {
+    "type": "boolean",
+    "description": "加载状态，设置为 `true` 开启骨架屏 默认值：true"
+  },
+  "var-skeleton/title": {
+    "type": "boolean",
+    "description": "是否显示标题 默认值：false"
+  },
+  "var-skeleton/card": {
+    "type": "boolean",
+    "description": "是否显示卡片 默认值：false"
+  },
+  "var-skeleton/avatar": {
+    "type": "boolean",
+    "description": "是否显示头像 默认值：false"
+  },
+  "var-skeleton/fullscreen": {
+    "type": "boolean",
+    "description": "是否开启全屏模式 默认值：false"
+  },
+  "var-skeleton/title-width": {
+    "type": "string | number",
+    "description": "标题宽度 默认值：50%"
+  },
+  "var-skeleton/card-height": {
+    "type": "string | number",
+    "description": "卡片高度 默认值：160px"
+  },
+  "var-skeleton/avatar-size": {
+    "type": "string | number",
+    "description": "头像尺寸 默认值：34px"
+  },
+  "var-skeleton/rows": {
+    "type": "string | number",
+    "description": "段落行数 默认值：3"
+  },
+  "var-skeleton/rows-width": {
+    "type": "number[] | string[]",
+    "description": "段落每一行的宽度 默认值：['12px', '12px', '12px']"
+  },
+  "var-snackbar/v-model:show": {
+    "type": "boolean",
+    "description": "是否显示`Snackbar` 默认值：false"
+  },
+  "var-snackbar/type": {
+    "type": "string",
+    "description": "`Snackbar`类型，可选值为`success, warning, info, error, loading`之一 默认值：-"
+  },
+  "var-snackbar/position": {
+    "type": "string",
+    "description": "`Snackbar`位置，可选值为`top, center, bottom`之一 默认值：top"
+  },
+  "var-snackbar/duration": {
+    "type": "number",
+    "description": "显示时长 默认值：3000"
+  },
+  "var-snackbar/content": {
+    "type": "string",
+    "description": "自定义内容 默认值：-"
+  },
+  "var-snackbar/content-class": {
+    "type": "string",
+    "description": "自定义内容的类名 默认值：-"
+  },
+  "var-snackbar/vertical": {
+    "type": "boolean",
+    "description": "是否启用竖直排列方式 默认值：false"
+  },
+  "var-snackbar/loading-type": {
+    "type": "string",
+    "description": "加载动画类型(见`Loading`组件) 默认值：circle"
+  },
+  "var-snackbar/loading-size": {
+    "type": "string",
+    "description": "加载动画大小(见`Loading`组件) 默认值：normal"
+  },
+  "var-snackbar/lock-scroll": {
+    "type": "boolean",
+    "description": "是否禁止滚动穿透 默认值：false"
+  },
+  "var-snackbar/forbid-click": {
+    "type": "boolean",
+    "description": "是否禁止穿透点击 默认值：false"
+  },
+  "var-snackbar/teleport": {
+    "type": "string",
+    "description": "弹出层挂载的位置 默认值：body"
+  },
+  "var-switch/v-model": {
+    "type": "any",
+    "description": "开关选中状态 默认值：false"
+  },
+  "var-switch/active-value": {
+    "type": "any",
+    "description": "开关打开时的值 默认值：true"
+  },
+  "var-switch/inactive-value": {
+    "type": "any",
+    "description": "开关关闭时的值 默认值：false"
+  },
+  "var-switch/disabled": {
+    "type": "boolean",
+    "description": "是否禁用 默认值：false"
+  },
+  "var-switch/readonly": {
+    "type": "boolean",
+    "description": "是否只读 默认值：false"
+  },
+  "var-switch/loading": {
+    "type": "boolean",
+    "description": "是否为加载状态 默认值：false"
+  },
+  "var-switch/ripple": {
+    "type": "boolean",
+    "description": "是否启用水波纹 默认值：true"
+  },
+  "var-switch/color": {
+    "type": "string",
+    "description": "打开状态下的颜色 默认值：#2979ff"
+  },
+  "var-switch/loading-color": {
+    "type": "string",
+    "description": "加载图标的颜色 默认值：#fff"
+  },
+  "var-switch/close-color": {
+    "type": "string",
+    "description": "关闭状态下的颜色 默认值：#fff"
+  },
+  "var-switch/size": {
+    "type": "string | number",
+    "description": "switch的大小 默认值：20"
+  },
+  "var-switch/rules": {
+    "type": "array",
+    "description": "校验规则 默认值：-"
+  },
+  "var-tab/name": {
+    "type": "string | number",
+    "description": "选项卡的名字 默认值：index"
+  },
+  "var-tab/disabled": {
+    "type": "boolean",
+    "description": "是否禁用选项卡 默认值：false"
+  },
+  "var-tab-item/name": {
+    "type": "string | number",
+    "description": "视图的名字 默认值：index"
+  },
+  "var-tabs/v-model:active": {
+    "type": "string",
+    "description": "激活的选项卡标识, 优先匹配name，其次是index 默认值：default"
+  },
+  "var-tabs/layout-direction": {
+    "type": "string",
+    "description": "选项卡组的布局方向， 可选值为 `horizontal` `vertical` 默认值：horizontal"
+  },
+  "var-tabs/item-direction": {
+    "type": "string",
+    "description": "选项卡的布局方向，可选值为 `horizontal` `vertical` 默认值：horizontal"
+  },
+  "var-tabs/fixed-bottom": {
+    "type": "boolean",
+    "description": "是否固定在窗口底部, 可用做底部导航 默认值：false"
+  },
+  "var-tabs/color": {
+    "type": "string",
+    "description": "选项卡的背景颜色 默认值：#fff"
+  },
+  "var-tabs/active-color": {
+    "type": "string",
+    "description": "选项卡激活的主要颜色 默认值：#2979ff"
+  },
+  "var-tabs/inactive-color": {
+    "type": "string",
+    "description": "选项卡未激活的主要颜色 默认值：#646566"
+  },
+  "var-tabs/disabled-color": {
+    "type": "string",
+    "description": "选项卡禁用时的主要颜色 默认值：#e0e0e0"
+  },
+  "var-tabs/indicator-color": {
+    "type": "string",
+    "description": "选项卡激活指示器的颜色 默认值：#2979ff"
+  },
+  "var-tabs/indicator-size": {
+    "type": "string | number",
+    "description": "选项卡激活指示器的尺寸 默认值：2px"
+  },
+  "var-tabs/elevation": {
+    "type": "boolean",
+    "description": "是否启用阴影 默认值：false"
+  },
+  "var-tabs/sticky": {
+    "type": "boolean",
+    "description": "是否启用粘性布局 默认值：false"
+  },
+  "var-tabs/offset-top": {
+    "type": "string | number",
+    "description": "吸顶距离 默认值：0"
+  },
+  "var-tabs-items/v-model:active": {
+    "type": "string | number",
+    "description": "激活的选项卡的名字 默认值：-"
+  },
+  "var-tabs-items/can-swipe": {
+    "type": "boolean",
+    "description": "是否允许滑动切换 默认值：true"
+  },
+  "var-tabs-items/loop": {
+    "type": "boolean",
+    "description": "是否允许循环切换 默认值：false"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "var-badge": {
+    "attributes": [
+      "type",
+      "dot",
+      "value",
+      "max-value",
+      "position",
+      "color",
+      "icon"
+    ]
+  },
+  "var-button": {
+    "attributes": [
+      "type",
+      "size",
+      "loading",
+      "loading-radius",
+      "loading-type",
+      "loading-size",
+      "round",
+      "block",
+      "text",
+      "outline",
+      "disabled",
+      "ripple",
+      "text-color",
+      "color"
+    ]
+  },
+  "var-card": {
+    "attributes": [
+      "title",
+      "subtitle",
+      "description",
+      "elevation",
+      "src",
+      "fit",
+      "alt",
+      "height",
+      "ripple"
+    ]
+  },
+  "var-cell": {
+    "attributes": [
+      "title",
+      "icon",
+      "desc",
+      "border",
+      "icon-class",
+      "title-class",
+      "desc-class",
+      "extra-class"
+    ]
+  },
+  "var-chip": {
+    "attributes": [
+      "type",
+      "size",
+      "plain",
+      "round",
+      "block",
+      "closeable",
+      "close-name",
+      "color",
+      "text-color"
+    ]
+  },
+  "var-dialog": {
+    "attributes": [
+      "v-model:show",
+      "title",
+      "message",
+      "message-align",
+      "confirm-button",
+      "cancel-button",
+      "confirm-button-text",
+      "cancel-button-text",
+      "confirm-button-text-color",
+      "cancel-button-text-color",
+      "confirm-button-color",
+      "cancel-button-color",
+      "overlay",
+      "overlay-class",
+      "overlay-style",
+      "lock-scroll",
+      "close-on-click-overlay",
+      "teleport"
+    ]
+  },
+  "var-divider": {
+    "attributes": [
+      "inset",
+      "vertical",
+      "dashed",
+      "description",
+      "margin"
+    ]
+  },
+  "var-image": {
+    "attributes": [
+      "src",
+      "fit",
+      "alt",
+      "width",
+      "height",
+      "radius",
+      "lazy",
+      "loading",
+      "error",
+      "ripple",
+      "block"
+    ]
+  },
+  "var-image-preview": {
+    "attributes": [
+      "show",
+      "images",
+      "current",
+      "zoom",
+      "closeable",
+      "loop",
+      "indicator",
+      "lock-scroll",
+      "teleport"
+    ]
+  },
+  "var-input": {
+    "attributes": [
+      "v-model",
+      "placeholder",
+      "type",
+      "maxlength",
+      "textarea",
+      "rows",
+      "line",
+      "hint",
+      "text-color",
+      "focus-color",
+      "blur-color",
+      "readonly",
+      "disabled",
+      "clearable",
+      "resize",
+      "validate-trigger",
+      "rules"
+    ]
+  },
+  "var-loading": {
+    "attributes": [
+      "color",
+      "type",
+      "size"
+    ]
+  },
+  "var-skeleton": {
+    "attributes": [
+      "loading",
+      "title",
+      "card",
+      "avatar",
+      "fullscreen",
+      "title-width",
+      "card-height",
+      "avatar-size",
+      "rows",
+      "rows-width"
+    ]
+  },
+  "var-snackbar": {
+    "attributes": [
+      "v-model:show",
+      "type",
+      "position",
+      "duration",
+      "content",
+      "content-class",
+      "vertical",
+      "loading-type",
+      "loading-size",
+      "lock-scroll",
+      "forbid-click",
+      "teleport"
+    ]
+  },
+  "var-switch": {
+    "attributes": [
+      "v-model",
+      "active-value",
+      "inactive-value",
+      "disabled",
+      "readonly",
+      "loading",
+      "ripple",
+      "color",
+      "loading-color",
+      "close-color",
+      "size",
+      "rules"
+    ]
+  },
+  "var-tab": {
+    "attributes": [
+      "name",
+      "disabled"
+    ]
+  },
+  "var-tab-item": {
+    "attributes": [
+      "name"
+    ]
+  },
+  "var-tabs": {
+    "attributes": [
+      "v-model:active",
+      "layout-direction",
+      "item-direction",
+      "fixed-bottom",
+      "color",
+      "active-color",
+      "inactive-color",
+      "disabled-color",
+      "indicator-color",
+      "indicator-size",
+      "elevation",
+      "sticky",
+      "offset-top"
+    ]
+  },
+  "var-tabs-items": {
+    "attributes": [
+      "v-model:active",
+      "can-swipe",
+      "loop"
+    ]
+  }
+}
