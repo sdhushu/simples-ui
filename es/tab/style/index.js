@@ -1,1 +1,0 @@
-import '../TabSfc.css'

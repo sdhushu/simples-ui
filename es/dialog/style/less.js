@@ -1,1 +1,0 @@
-import '../DialogSfc.css'
