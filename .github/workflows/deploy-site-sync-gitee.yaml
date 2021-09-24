@@ -15,12 +15,12 @@ jobs:
 
       - name: npm varlet
         run: yarn add @varlet/cli
-        
+
       - name: Build site
         run:  yarn dist
 
-      - name: Deploy site
+       name: Deploy site
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          branch: main
+          branch: gh-page
           folder: site
