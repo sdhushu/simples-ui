@@ -14,7 +14,7 @@ jobs:
           node-version: '14.x'
 
       - name: Build site
-        run:  yarn dist
+        run:  npm runs dist
 
       - name: Deploy site
         uses: JamesIves/github-pages-deploy-action@4.1.1
