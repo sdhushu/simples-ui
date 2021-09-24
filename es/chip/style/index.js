@@ -1,1 +1,0 @@
-import '../ChipSfc.css'
