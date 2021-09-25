@@ -209,6 +209,19 @@ module.exports = {
       },
     ],
   },
+  "mobile": {
+    "redirect": "/home",
+    "title": {
+      "zh-CN": "Simpls 面向Vue3的组件库",
+      "en-US": "PC components built for Vue3"
+    },
+    "header": {
+      "i18n": {
+        "zh-CN": "中文",
+        "en-US": "English"
+      }
+    }
+  },
   "themes": {
     "color-primary": "#41B883",
     "color-link": "#00c48f",
