@@ -1,8 +1,24 @@
 module.exports = {
+  name: "Simples",
+  namespace: "simples",
   host: '0.0.0.0',
   port: 8080,
+  title: "Simples",
+  logo: "https://www.runoob.com/wp-content/uploads/2017/01/vue.png",
   useMobile: true,
   pc: {
+    redirect: "/home",
+    title: {
+      "zh-CN": "Simpls 面向Vue3的组件库",
+      "en-US": "PC components built for Vue3"
+    },
+    header: {
+      "i18n": {
+        "zh-CN": "中文",
+        "en-US": "English"
+      },
+      github: "https://github.com/sdhushu/simples-ui"
+    },
     menu: [
       {
         text: {
@@ -193,4 +209,14 @@ module.exports = {
       },
     ],
   },
+  "themes": {
+    "color-primary": "#41B883",
+    "color-link": "#00c48f",
+    "color-type": "#00c48f",
+    "color-side-bar": "#41B883",
+    "color-side-bar-active-background": "#cde6c7",
+    "color-app-bar": "#41B883",
+    "color-mobile-cell-hover": "#3a7afe",
+    "color-mobile-cell-hover-background": "#3a7afe1a"
+  }
 }
