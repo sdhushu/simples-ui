@@ -37,50 +37,10 @@ module.exports = {
       },
       {
         text: {
-          'zh-CN': '浏览器适配',
-          'en-US': 'Browser Adaptation',
-        },
-        doc: 'browserAdaptation',
-        type: 3,
-      },
-      {
-        text: {
-          'zh-CN': '国际化',
-          'en-US': 'Locale',
-        },
-        doc: 'locale',
-        type: 3,
-      },
-      {
-        text: {
-          'zh-CN': '开发工具支持',
-          'en-US': 'IDE Code Support',
-        },
-        doc: 'ide',
-        type: 3,
-      },
-      {
-        text: {
-          'zh-CN': '开发指南',
-          'en-US': 'Developer Guide',
-        },
-        doc: 'developerGuide',
-        type: 3,
-      },
-      {
-        text: {
           'zh-CN': '基础组件',
           'en-US': 'Basic Components',
         },
         type: 1,
-      },
-      {
-        text: {
-          'zh-CN': 'StyleProvider 样式定制',
-          'en-US': 'StyleProvider',
-        },
-        doc: 'style-provider',
-        type: 2,
       },
       {
         text: {
@@ -96,14 +56,6 @@ module.exports = {
           'en-US': 'Cell',
         },
         doc: 'cell',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Icon 图标',
-          'en-US': 'Icon',
-        },
-        doc: 'icon',
         type: 2,
       },
       {
@@ -140,14 +92,6 @@ module.exports = {
       },
       {
         text: {
-          'zh-CN': 'Elevation 海拔效果',
-          'en-US': 'Elevation',
-        },
-        doc: 'styles',
-        type: 2,
-      },
-      {
-        text: {
           'zh-CN': '展示组件',
           'en-US': 'Display Components',
         },
@@ -161,62 +105,7 @@ module.exports = {
         doc: 'skeleton',
         type: 2,
       },
-      {
-        text: {
-          'zh-CN': 'Collapse 拓展面板',
-          'en-US': 'Collapse',
-        },
-        doc: 'collapse',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Layout 布局',
-          'en-US': 'Layout',
-        },
-        doc: 'row',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Sticky 粘性布局',
-          'en-US': 'Sticky',
-        },
-        doc: 'sticky',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Progress 进度条',
-          'en-US': 'Progress',
-        },
-        doc: 'progress',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'List 无限滚动列表',
-          'en-US': 'List',
-        },
-        doc: 'list',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Swipe 轮播',
-          'en-US': 'Swipe',
-        },
-        doc: 'swipe',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Steps 步骤条',
-          'en-US': 'Steps',
-        },
-        doc: 'steps',
-        type: 2,
-      },
+     
       {
         text: {
           'zh-CN': 'ImagePreview 图片预览',
@@ -258,45 +147,6 @@ module.exports = {
       },
       {
         text: {
-          'zh-CN': 'IndexBar 索引栏',
-          'en-US': 'IndexBar',
-        },
-        doc: 'index-bar',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'AppBar 导航栏',
-          'en-US': 'AppBar',
-        },
-        doc: 'app-bar',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': '功能指令',
-          'en-US': 'Functional Directives',
-        },
-        type: 1,
-      },
-      {
-        text: {
-          'zh-CN': 'Ripple 水波指令',
-          'en-US': 'Ripple',
-        },
-        doc: 'ripple',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Lazy 懒加载',
-          'en-US': 'Lazy',
-        },
-        doc: 'lazy',
-        type: 2,
-      },
-      {
-        text: {
           'zh-CN': '反馈组件',
           'en-US': 'Action Components',
         },
@@ -312,82 +162,10 @@ module.exports = {
       },
       {
         text: {
-          'zh-CN': 'ActionSheet 动作面板',
-          'en-US': 'ActionSheet',
-        },
-        doc: 'action-sheet',
-        type: 2,
-      },
-      {
-        text: {
           'zh-CN': 'Dialog 对话框',
           'en-US': 'Dialog',
         },
         doc: 'dialog',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'PullRefresh 下拉刷新',
-          'en-US': 'PullRefresh',
-        },
-        doc: 'pull-refresh',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Popup 弹出层',
-          'en-US': 'Popup',
-        },
-        doc: 'popup',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Menu 菜单',
-          'en-US': 'Menu',
-        },
-        doc: 'menu',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'BackTop 回到顶部',
-          'en-US': 'BackTop',
-        },
-        doc: 'back-top',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Countdown 倒计时',
-          'en-US': 'Countdown',
-        },
-        doc: 'countdown',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Picker 多列选择器',
-          'en-US': 'Picker',
-        },
-        doc: 'picker',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'DatePicker 日期选择器',
-          'en-US': 'DatePicker',
-        },
-        doc: 'date-picker',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'TimePicker 时间选择器',
-          'en-US': 'TimePicker',
-        },
-        doc: 'time-picker',
         type: 2,
       },
       {
@@ -399,14 +177,6 @@ module.exports = {
       },
       {
         text: {
-          'zh-CN': 'Form 表单',
-          'en-US': 'Form',
-        },
-        doc: 'form',
-        type: 2,
-      },
-      {
-        text: {
           'zh-CN': 'Input 输入框',
           'en-US': 'Input',
         },
@@ -415,66 +185,10 @@ module.exports = {
       },
       {
         text: {
-          'zh-CN': 'Select 选择框',
-          'en-US': 'Select',
-        },
-        doc: 'select',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Radio 单选框',
-          'en-US': 'Radio',
-        },
-        doc: 'radio-group',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Checkbox 复选框',
-          'en-US': 'Checkbox',
-        },
-        doc: 'checkbox-group',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Counter 计数器',
-          'en-US': 'Counter',
-        },
-        doc: 'counter',
-        type: 2,
-      },
-      {
-        text: {
           'zh-CN': 'Switch 开关',
           'en-US': 'Switch',
         },
         doc: 'switch',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Slider 滑块',
-          'en-US': 'slider',
-        },
-        doc: 'slider',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Rate 评分',
-          'en-US': 'Rate',
-        },
-        doc: 'rate',
-        type: 2,
-      },
-      {
-        text: {
-          'zh-CN': 'Uploader 文件上传',
-          'en-US': 'Uploader',
-        },
-        doc: 'uploader',
         type: 2,
       },
     ],
