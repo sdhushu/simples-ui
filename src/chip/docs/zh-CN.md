@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue'
-import { Chip } from '@varlet/ui'
+import { Chip } from 'simples-ui'
 
 createApp().use(Chip)
 ```
@@ -14,12 +14,12 @@ createApp().use(Chip)
 通过`type`属性设置纸片的类型。
 
 ```html
-<var-chip type="primary">主要纸片</var-chip>
-<var-chip type="success">成功纸片</var-chip>
-<var-chip type="danger">危险纸片</var-chip>
-<var-chip type="warning">警告纸片</var-chip>
-<var-chip type="info">信息纸片</var-chip>
-<var-chip>默认纸片</var-chip>
+<simples-chip type="primary">主要纸片</simples-chip>
+<simples-chip type="success">成功纸片</simples-chip>
+<simples-chip type="danger">危险纸片</simples-chip>
+<simples-chip type="warning">警告纸片</simples-chip>
+<simples-chip type="info">信息纸片</simples-chip>
+<simples-chip>默认纸片</simples-chip>
 ```
 
 ### 简单纸片
@@ -27,7 +27,7 @@ createApp().use(Chip)
 通过`plain`属性将纸片设置为简单纸片。
 
 ```html
-<var-chip plain type="primary">简单纸片</var-chip>
+<simples-chip plain type="primary">简单纸片</simples-chip>
 ```
 
 ### 非圆角纸片
@@ -35,7 +35,7 @@ createApp().use(Chip)
 通过把`round`属性设置为`false`来取消纸片的圆角样式。
 
 ```html
-<var-chip :round="false" type="primary">非圆角纸片</var-chip>
+<simples-chip :round="false" type="primary">非圆角纸片</simples-chip>
 ```
 
 ### 纸片尺寸
@@ -43,10 +43,10 @@ createApp().use(Chip)
 通过`size`属性设置纸片的尺寸。
 
 ```html
-<var-chip size="large">大纸片</var-chip>
-<var-chip>常规纸片</var-chip>
-<var-chip size="small">小纸片</var-chip>
-<var-chip size="mini">迷你纸片</var-chip>
+<simples-chip size="large">大纸片</simples-chip>
+<simples-chip>常规纸片</simples-chip>
+<simples-chip size="small">小纸片</simples-chip>
+<simples-chip size="mini">迷你纸片</simples-chip>
 ```
 
 ### 块级纸片
@@ -54,22 +54,21 @@ createApp().use(Chip)
 通过`block`属性将纸片设置为块级纸片。
 
 ```html
-<var-chip type="primary" block>块级纸片</var-chip>
+<simples-chip type="primary" block>块级纸片</simples-chip>
 ```
 
 ### 可关闭纸片
 
-通过`closable`属性将纸片设置为可关闭纸片，使用`close-name`属性设置纸片的关闭图标样式（必须在`closeable`为`true`的条件下才能使用）。
+通过`closable`属性将纸片设置为可关闭纸片。
 
 ```html
-<var-chip closable v-if="show" @close="show = false">可关闭纸片</var-chip>
-<var-chip
+<simples-chip closable v-if="show" @close="show = false">可关闭纸片</simples-chip>
+<simples-chip
   closable
-  icon-name="delete"
   v-if="show1"
   @close="show1 = false">
   自定义关闭图标
-</var-chip>
+</simples-chip>
 ```
 
 ```js
@@ -93,38 +92,12 @@ export default {
 通过`color`和`text-color`属性设置纸片颜色。
 
 ```html
-<var-chip color="#009688">纸片</var-chip>
-<var-chip color="#009688" plain>纸片</var-chip>
-<var-chip color="#faecd8" text-color="#e6a23c" plain>纸片</var-chip>
-<var-chip color="#faecd8" text-color="#e6a23c">纸片</var-chip>
+<simples-chip color="#009688">纸片</simples-chip>
+<simples-chip color="#009688" plain>纸片</simples-chip>
+<simples-chip color="#faecd8" text-color="#e6a23c" plain>纸片</simples-chip>
+<simples-chip color="#faecd8" text-color="#e6a23c">纸片</simples-chip>
 ```
 
-### 添加插槽
-
-```html
-<var-chip type="primary" plain>
-  左侧插槽
-  <template #left>
-    <var-icon name="star" />
-  </template>
-</var-chip>
-<var-chip type="primary" plain>
-  右侧插槽
-  <template #right>
-    <var-icon name="fire" />
-  </template>
-</var-chip>
-<var-chip type="primary" plain>
-  左右两侧插槽
-  <template #left>
-    <var-icon name="account-circle" />
-  </template>
-
-  <template #right>
-    <var-icon name="cake-variant" />
-  </template>
-</var-chip>
-```
 
 ## API
 
@@ -155,33 +128,4 @@ export default {
 | 事件名 | 说明 | 回调参数 |
 | ---- | ---- | ---- |
 | `close` | 点击关闭按钮时触发，只有在显示关闭按钮的时候才能使用 | `event: Event`  |
-
-### 样式变量
-以下为组件使用的css变量,可以使用[StyleProvider组件](#/zh-CN/style-provider)进行样式定制
-
-| 变量名 | 默认值 |
-| --- | --- |
-| `--chip-default-color` | `#f5f5f5` |
-| `--chip-primary-color` | `var(--color-primary)`|
-| `--chip-danger-color` |  `var(--color-danger)`|
-| `--chip-success-color` | `var(--color-success)`|
-| `--chip-warning-color` |  `var(--color-warning)`|
-| `--chip-info-color` | `var(--color-info)`|
-| `--chip-border-radius` | `2px` |
-| `--chip-mini-height` | `16px` |
-| `--chip-small-height` | `24px` |
-| `--chip-normal-height` | `32px` |
-| `--chip-large-height` | `40px` |
-| `--chip-round-radius` | `100px` |
-| `--chip-mini-padding` | `0 4px` |
-| `--chip-small-padding` | `0 6px` |
-| `--chip-normal-padding` | `0 10px` |
-| `--chip-large-padding` | `0 17px` |
-| `--chip-text-large-margin` | `0 5px` |
-| `--chip-text-normal-margin` | `0 5px` |
-| `--chip-text-small-margin` | `0 3px` |
-| `--chip-text-mini-margin` | `0 2px` |
-
-
-
 

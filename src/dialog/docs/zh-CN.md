@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue'
-import { Dialog } from '@varlet/ui'
+import { Dialog } from 'simples-ui'
 
 createApp().use(Dialog)
 ```
@@ -16,7 +16,7 @@ createApp().use(Dialog)
 ### 局部引入
 
 ```js
-import { Dialog } from '@varlet/ui'
+import { Dialog } from 'simples-ui'
 
 export default {
   components: {
@@ -57,7 +57,7 @@ Dialog({
 包含`confirm(确认)`、`cancel(取消)`、`close(通过点击遮罩层触发关闭)`三种状态。
 
 ```js
-import { Snackbar } from '@varlet/ui'
+import { Snackbar } from 'simples-ui'
 
 const actions = {
   confirm: () => Snackbar.success('confirm'),

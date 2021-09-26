@@ -8,7 +8,7 @@
 
 ```js
 import { createApp } from 'vue'
-import { Switch } from '@varlet/ui'
+import { Switch } from 'simples-ui'
 
 createApp().use(Switch)
 ```
@@ -16,7 +16,7 @@ createApp().use(Switch)
 ### 基本使用
 
 ```html
-<var-switch v-model="value" />
+<simples-switch v-model="value" />
 ```
 
 ```javascript
@@ -35,15 +35,15 @@ export default {
 ### 不可用
 
 ```html
-<var-switch v-model="value" disabled />
-<var-switch v-model="value" readonly />
+<simples-switch v-model="value" disabled />
+<simples-switch v-model="value" readonly />
 ```
 
 ### 自定义颜色
 
 ```html
-<var-switch v-model="value" :ripple="false" />
-<var-switch v-model="value" color="#ff9f00" close-color="#f5cb90" />
+<simples-switch v-model="value" :ripple="false" />
+<simples-switch v-model="value" color="#ff9f00" close-color="#f5cb90" />
 ```
 
 ### 不同大小
@@ -51,26 +51,12 @@ export default {
 通过`size`属性改变Switch大小。
 
 ```html
-<var-switch v-model="value" size="15" />
-<var-switch v-model="value" />
-<var-switch v-model="value" size="25" />
+<simples-switch v-model="value" size="15" />
+<simples-switch v-model="value" />
+<simples-switch v-model="value" size="25" />
 ```
 
-### 加载状态
 
-```html
-<var-switch :model-value="true" loading />
-<var-switch :model-value="true" size="25" loading loading-color="#ff9f00" />
-```
-
-### 值的校验
-
-通过传入一个校验器数组可以对值进行校验，校验器返回`true`则为校验通过。
-以外的值将转换为文本作为用户提示。
-
-```html
-<var-switch v-model="value" :rules="[(v) => v === true || '错误！']"/>
-```
 
 ## API
 
@@ -89,7 +75,7 @@ export default {
 | `loading-color` | 加载图标的颜色 | _string_ | `#fff` |
 | `close-color` | 关闭状态下的颜色 | _string_ | `#fff` |
 | `size` | switch的大小 | _string \| number_ | `20` |
-| `rules`| 校验规则 | _array_  | - |
+
 
 ### 事件
 
@@ -97,19 +83,4 @@ export default {
 | ----- | -------------- | -------- |
 | `click` | 点击时触发 | `event: Event` |
 | `change` | 开关状态切换时触发 | `value: any` |
-
-### 样式变量
-
-以下为组件使用的 css 变量,可以使用[StyleProvider 组件](#/zh-CN/style-provider)进行样式定制
-
-| 变量名 | 默认值 |
-| --- | --- |
-| `--switch-track-background` | `#fff` |
-| `--switch-track-active-background` | `var(--color-primary)` |
-| `--switch-track-error-background` | `var(--color-danger)` |
-| `--switch-ripple-color` | `var(--color-primary)` |
-| `--switch-handle-background` | `#fff` |
-| `--switch-handle-color` | `#fff` |
-| `--switch-handle-active-background` | `var(--color-primary)` |
-| `--switch-handle-error-background` | `var(--color-danger)` |
 

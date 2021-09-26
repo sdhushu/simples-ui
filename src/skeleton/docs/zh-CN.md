@@ -7,7 +7,7 @@
 
 ```js
 import { createApp } from 'vue'
-import { Skeleton } from '@varlet/ui'
+import { Skeleton } from 'simples-ui'
 
 createApp().use(Skeleton)
 ```
@@ -15,7 +15,7 @@ createApp().use(Skeleton)
 ### 基本使用
 
 ```html
-<var-skeleton :loading="loading">加载的数据</var-skeleton>
+<simples-skeleton :loading="loading">加载的数据</simples-skeleton>
 ```
 
 ```js
@@ -33,39 +33,39 @@ export default {
 ### 显示标题
 
 ```html
- <var-skeleton title :loading="loading">加载的数据</var-skeleton>
+ <simples-skeleton title :loading="loading">加载的数据</simples-skeleton>
 ```
 
 ### 自定义段落高度
 
 ```html
-<var-skeleton
+<simples-skeleton
   title
   :rows="3"
   :loading="loading"
   :rows-width="['200px', '100px', '50px']"
 >
   加载的数据
-</var-skeleton>
+</simples-skeleton>
 ```
 
 ### 显示头像
 
 ```html
-<var-skeleton
+<simples-skeleton
   title
   avatar
   :rows="3"
   :loading="loading"
 >
   加载的数据
-</var-skeleton>
+</simples-skeleton>
 ```
 
 ### 显示卡片
 
 ```html
-<var-skeleton
+<simples-skeleton
   title
   avatar
   card
@@ -73,17 +73,9 @@ export default {
   :loading="loading"
 >
   加载的数据
-</var-skeleton>
+</simples-skeleton>
 ```
 
-### 全屏模式
-
-```html
-<var-button type="danger" @click="loading = !loading">
-  切换全屏模式
-</var-button>
-<var-skeleton fullscreen :loading="loading" />
-```
 
 ## API
 
@@ -95,7 +87,6 @@ export default {
 | `title` | 是否显示标题 | _boolean_ | `false` |
 | `card` | 是否显示卡片 | _boolean_ | `false` |
 | `avatar` | 是否显示头像 | _boolean_ | `false` |
-| `fullscreen` | 是否开启全屏模式 | _boolean_ | `false` |
 | `title-width` | 标题宽度 | _string \| number_ | `50%` |
 | `card-height` | 卡片高度 | _string \| number_ | `160px` |
 | `avatar-size` | 头像尺寸 | _string \| number_ | `34px` |
@@ -107,25 +98,3 @@ export default {
 | 插槽名 | 说明 | 参数 |
 | --- | --- | --- |
 | `default` | 加载成功后显示的内容 | `-` |
-
-### 样式变量
-
-以下为组件使用的 css 变量,可以使用[StyleProvider 组件](#/zh-CN/style-provider)进行样式定制
-
-| 变量名 | 默认值 |
-| --- | --- |
-| `--skeleton-content-padding` | `16px` |
-| `--skeleton-card-height` | `160px` |
-| `--skeleton-card-border-radius` | `4px` |
-| `--skeleton-card-margin-bottom` | `16px` |
-| `--skeleton-card-background-color` | `rgba(0, 0, 0, 0.12)` |
-| `--skeleton-animation-background` | `linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0.3), hsla(0, 0%, 100%, 0))` |
-| `--skeleton-avatar-size` | `34px` |
-| `--skeleton-avatar-margin-right` | `16px` |
-| `--skeleton-avatar-background-color` | `rgba(0, 0, 0, 0.12)` |
-| `--skeleton-title-width` | `50%` |
-| `--skeleton-title-border-radius` | `10px` |
-| `--skeleton-title-background-color` | `rgba(0, 0, 0, 0.12)` |
-| `--skeleton-row-height` | `12px` |
-| `--skeleton-row-border-radius` | `10px` |
-| `--skeleton-row-margin-top` | `10px` |

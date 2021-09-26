@@ -4,7 +4,7 @@
 
 ```js
 import { createApp } from 'vue'
-import { Loading } from '@varlet/ui'
+import { Loading } from 'simples-ui'
 
 createApp().use(Loading)
 ```
@@ -12,30 +12,30 @@ createApp().use(Loading)
 ### Loading 类型
 
 ```html
-<var-loading type="circle" />
-<var-loading type="cube" />
-<var-loading type="wave" />
-<var-loading type="rect" />
-<var-loading type="disappear" />
+<simples-loading type="circle" />
+<simples-loading type="cube" />
+<simples-loading type="wave" />
+<simples-loading type="rect" />
+<simples-loading type="disappear" />
 ```
 
 ### Loading 颜色
 ```html
-<var-loading type="circle" style="color: #2979ff" />
-<var-loading type="cube"  style="color: #2979ff"/>
-<var-loading type="wave" style="color: #2979ff" />
-<var-loading type="rect" style="color: #2979ff" />
-<var-loading type="disappear" style="color: #2979ff" />
+<simples-loading type="circle" style="color: #2979ff" />
+<simples-loading type="cube"  style="color: #2979ff"/>
+<simples-loading type="wave" style="color: #2979ff" />
+<simples-loading type="rect" style="color: #2979ff" />
+<simples-loading type="disappear" style="color: #2979ff" />
 ```
 
 ### Loading 大小
 
 ```html
-<var-loading type="circle" size="small" />
-<var-loading type="cube" size="small" />
-<var-loading type="wave" size="small" />
-<var-loading type="rect" size="small" />
-<var-loading type="disappear" size="small" />
+<simples-loading type="circle" size="small" />
+<simples-loading type="cube" size="small" />
+<simples-loading type="wave" size="small" />
+<simples-loading type="rect" size="small" />
+<simples-loading type="disappear" size="small" />
 ```
 
 ## API
