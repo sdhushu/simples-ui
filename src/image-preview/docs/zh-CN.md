@@ -5,6 +5,10 @@
 图片放大预览，支持双击倍数放大，支持函数调用和组件调用两种方式。
 
 ### 引入
+```vue
+import example from '../example'
+```
+
 
 ```js
 import { createApp } from 'vue'

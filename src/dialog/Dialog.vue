@@ -56,7 +56,7 @@ export default {
 </script>
 <style lang="css">
 .simple-dialog {
-  width: 90%;
+  width: 40%;
   height: 137px;
   display: flex;
   flex-direction: column;
@@ -81,6 +81,7 @@ export default {
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0, 0.3);
+  z-index:2000;
 }
 .simple-title {
   font-size: 18px;

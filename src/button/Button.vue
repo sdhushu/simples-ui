@@ -23,7 +23,9 @@
       backgroundImage: color,
     }"
   >
-    <span v-if="!loadingType"><slot></slot></span>
+    <span v-if="!loadingType">
+      <slot></slot>
+    </span>
     <!-- 圆形加载 -->
     <svg
       version="1.1"
@@ -66,15 +68,7 @@
       xml:space="preserve"
       v-if="loadingType == 'rect'"
     >
-      <rect
-        fill="none"
-        stroke="#fff"
-        stroke-width="4"
-        x="25"
-        y="25"
-        width="50"
-        height="50"
-      >
+      <rect fill="none" stroke="#fff" stroke-width="4" x="25" y="25" width="50" height="50">
         <animateTransform
           attributeName="transform"
           dur="0.5s"
@@ -217,7 +211,7 @@
         stroke="#fff"
         stroke-width="6"
         stroke-miterlimit="15"
-        stroke-dasharray="14.2472,14.2472"
+        stroke-dasharray="14.2472 14.2472"
         cx="50"
         cy="50"
         r="47"
@@ -237,7 +231,7 @@
         stroke="#fff"
         stroke-width="1"
         stroke-miterlimit="10"
-        stroke-dasharray="10,10"
+        stroke-dasharray="10 10"
         cx="50"
         cy="50"
         r="39"
@@ -310,7 +304,7 @@
 
 <script>
 export default {
-  name:'SimplesButton',
+  name: 'SimplesButton',
   props: {
     type: String,
     text: Boolean,
@@ -341,18 +335,23 @@ export default {
   font-family: inherit;
   cursor: pointer;
   font-size: 14px;
+  transition:  transform 2s;
+}
+
+.simple-button:active {
+  opacity: 0.6;
 }
 
 .text-color {
   color: #fff;
 }
 .simple-button--primary {
-  background-color: #3DB2FF;
+  background-color: #3db2ff;
   color: #fff;
 }
 .simple-button--primary--color {
-  color: #3DB2FF;
-  border: 1px solid #3DB2FF;
+  color: #3db2ff;
+  border: 1px solid #3db2ff;
 }
 
 .simple-button--info {
@@ -373,20 +372,20 @@ export default {
   border: 1px solid rgb(92, 218, 180);
 }
 .simple-button--warning {
-  background-color: #FFB830;
+  background-color: #ffb830;
   color: #fff;
 }
 .simple-button--warning--color {
-  color: #FFB830;
-  border: 1px solid #FFB830;
+  color: #ffb830;
+  border: 1px solid #ffb830;
 }
 .simple-button--danger {
-  background-color: #FF2442;
+  background-color: #ff2442;
   color: #fff;
 }
 .simple-button--danger--color {
-  color: #FF2442;
-  border: 1px solid #FF2442;
+  color: #ff2442;
+  border: 1px solid #ff2442;
 }
 .simple-button--outline {
   background-color: #fff;
@@ -397,17 +396,20 @@ export default {
 }
 .simple-button--disabled {
   color: gray;
+  pointer-events: none;
   cursor: no-drop;
 }
 .simple-button--disabled--outline {
   color: gray;
   cursor: no-drop;
+  pointer-events: none;
   border: 1px solid gray;
 }
 .simple-button--disabled--text {
   color: gray;
   cursor: no-drop;
   border: none;
+  pointer-events: none;
   box-shadow: none;
 }
 .simple-button--gray {

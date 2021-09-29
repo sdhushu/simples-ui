@@ -1,13 +1,13 @@
 <template>
-  <!-- <simplebutton type="warning" block @click="show = true"
-    >基本使用</simplebutton
-  > -->
-  <!-- <simpledialog
+  <simples-button type="warning" block @click="show = true"
+    >基本使用</simples-button
+  >
+  <simples-dialog
     title="兰亭序"
     message="兰亭临帖 行书如行云流水"
     v-model:show="show"
-  /> -->
-  <simples-button type="info" block @click="test()">基本使用</simples-button>
+  />
+  <!-- <simples-button type="info" block @click="test()">基本使用</simples-button> -->
 </template>
  
 <script setup>

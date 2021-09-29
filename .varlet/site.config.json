@@ -6,20 +6,14 @@
   "title": "Simples",
   "logo": "https://www.runoob.com/wp-content/uploads/2017/01/vue.png",
   "defaultLanguage": "zh-CN",
-  "useMobile": true,
+  "highlight": {
+    "style": "//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/nord.min.css"
+  },
+  "analysis": {
+    "baidu": ""
+  },
+  "useMobile": false,
   "pc": {
-    "redirect": "/home",
-    "title": {
-      "zh-CN": "Simpls 面向Vue3的组件库",
-      "en-US": "PC components built for Vue3"
-    },
-    "header": {
-      "i18n": {
-        "zh-CN": "中文",
-        "en-US": "English"
-      },
-      "github": "https://github.com/sdhushu/simples-ui"
-    },
     "menu": [
       {
         "text": {
@@ -207,7 +201,19 @@
         "doc": "switch",
         "type": 2
       }
-    ]
+    ],
+    "redirect": "/home",
+    "title": {
+      "zh-CN": "Simpls 面向Vue3的组件库",
+      "en-US": "PC components built for Vue3"
+    },
+    "header": {
+      "i18n": {
+        "zh-CN": "中文",
+        "en-US": "English"
+      },
+      "github": "https://github.com/sdhushu/simples-ui"
+    }
   },
   "mobile": {
     "redirect": "/home",
@@ -226,10 +232,15 @@
     "color-primary": "#41B883",
     "color-link": "#00c48f",
     "color-type": "#00c48f",
+    "color-progress": "#1d92e9",
+    "color-pc-language-active": "#3a7afe",
+    "color-pc-language-active-background": "#edf5ff",
     "color-side-bar": "#41B883",
     "color-side-bar-active-background": "#cde6c7",
     "color-app-bar": "#41B883",
     "color-mobile-cell-hover": "#3a7afe",
-    "color-mobile-cell-hover-background": "#3a7afe1a"
+    "color-mobile-cell-hover-background": "#3a7afe1a",
+    "color-mobile-language-active": "#3a7afe",
+    "color-mobile-language-active-background": "#edf5ff"
   }
 }

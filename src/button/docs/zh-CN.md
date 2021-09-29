@@ -1,7 +1,6 @@
 # 按钮
 
 ### 引入
-
 ```js
 import { createApp } from 'vue'
 import { Button } from 'simples-ui'
@@ -9,7 +8,12 @@ import { Button } from 'simples-ui'
 createApp().use(Button)
 ```
 
+
 ### 主题色按钮
+
+```vue
+import mainColor from '../example/mainColor.vue'
+```
 
 ```html
   <simples-button>默认按钮</simples-button>
@@ -20,7 +24,12 @@ createApp().use(Button)
   <simples-button type="danger">危险按钮</simples-button>
 ```
 
+
 ### 文字按钮
+
+```vue
+import textColor from '../example/textColor.vue'
+```
 
 ```html
   <simples-button text outline type="primary">外边框按钮</simples-button>

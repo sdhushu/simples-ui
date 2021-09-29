@@ -5,7 +5,7 @@ module.exports = {
   port: 8080,
   title: "Simples",
   logo: "https://www.runoob.com/wp-content/uploads/2017/01/vue.png",
-  useMobile: true,
+  useMobile: false,
   pc: {
     redirect: "/home",
     title: {

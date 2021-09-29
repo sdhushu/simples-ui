@@ -5,6 +5,9 @@
 `Dialog`提供了函数式和组件式两种使用方式，两种使用效果和参数并没有本质区别。
 
 ### 引入
+```vue
+import example from '../example'
+```
 
 ```js
 import { createApp } from 'vue'

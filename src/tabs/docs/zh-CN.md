@@ -5,6 +5,9 @@
 使用`Tabs`、`Tab`实现选项卡组的切换。使用`TabsItems`、`TabItem`实现和选项卡组的视图联动。
 
 ### 引入
+```vue
+import example from '../example'
+```
 
 ```js
 import { createApp } from 'vue'
