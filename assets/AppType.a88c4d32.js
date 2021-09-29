@@ -1,0 +1,1 @@
+import{_ as p}from"./preload-helper.043fafbb.js";import{q as o,o as a,c as s,N as r}from"./vendor.1aa91344.js";const t=o({name:"AppType"}),n={class:"app-type"};function _(e,c,d,l,f,i){return a(),s("div",n,[r(e.$slots,"default")])}var v=p(t,[["render",_]]);export{v as A};
