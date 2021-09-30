@@ -38,6 +38,10 @@ import textColor from '../example/textColor.vue'
 
 ### 禁用状态
 
+```vue
+import disabledColor from '../example/disabledColor.vue'
+```
+
 ```html
   <simples-button disabled>禁用按钮</simples-button>
   <simples-button disabled text outline>禁用按钮</simples-button>
@@ -46,17 +50,23 @@ import textColor from '../example/textColor.vue'
 
 ### 加载状态
 
+```vue
+import loadingColor from '../example/loadingColor.vue'
+```
+
 ```html
   <simples-button type="primary" loading-type="circle">加载状态</simples-button>
   <simples-button type="info" loading-type="rect">加载状态</simples-button>
-  <simples-button type="success" loading-type="disappear"
-    >加载状态</simples-button
-  >
+  <simples-button type="success" loading-type="disappear">加载状态</simples-button>
   <simples-button type="warning" loading-type="cube">加载状态</simples-button>
   <simples-button type="danger" loading-type="wave">加载状态</simples-button>
 ```
 
 ### 按钮尺寸
+
+```vue
+import sizeColor from '../example/sizeColor.vue'
+```
 
 ```html
   <simples-button type="primary">常规按钮</simples-button>
@@ -67,11 +77,19 @@ import textColor from '../example/textColor.vue'
 
 ### 块级按钮
 
+```vue
+import blockColor from '../example/blockColor.vue'
+```
+
 ```html
   <simples-button block type="primary">块级按钮</simples-button>
 ```
 
 ### 自定义颜色
+
+```vue
+import selfColor from '../example/selfColor.vue'
+```
 
 ```html
   <simples-button color="#69dbaa" text-color="#eee">背景/文字</simples-button>
@@ -83,6 +101,10 @@ import textColor from '../example/textColor.vue'
 ```
 
 ### 圆形按钮
+
+```vue
+import roundColor from '../example/roundColor.vue'
+```
 
 ```html
   <simples-button type="primary" round></simples-button>
@@ -97,7 +119,6 @@ import textColor from '../example/textColor.vue'
 | `type` | 类型， 可选值为 `default` `primary` `info` `success` `warning` `danger` | _string_ | `default` |
 | `size` | 尺寸， 可选值为 `normal` `mini` `small` `large` | _string_ | `normal` |
 | `loading` | 加载状态 | _boolean_ | `false` |  
-| `loading-radius` | loading的半径，只作用于 `loading-type="circle"` 时 | _string \| number_ | `12` |
 | `loading-type` | loading的类型，可选值为 `circle` `wave` `cube` `rect` `disappear` | _string_ | `circle` |
 | `loading-size` | loading的尺寸，可选值为 `large` `normal` `small` `mini` 不作用于 `loading-type="circle"` 时 | _string_ | `normal` |
 | `round` | 是否是圆形按钮 | _boolean_ | `false` | 
@@ -105,7 +126,6 @@ import textColor from '../example/textColor.vue'
 | `text` | 是否是文字按钮 | _boolean_ | `false` |
 | `outline` | 是否使用外边框 | _boolean_ | `false` |
 | `disabled` | 禁用状态 | _boolean_ | `false` |
-| `ripple` | 是否使用水波纹 | _boolean_ | `true` |
 | `text-color` | 文字颜色 | _string_ | `-` |
 | `color` | 背景颜色 | _string_ | `-` |
 

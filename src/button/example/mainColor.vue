@@ -1,5 +1,4 @@
 <template>
-    <!-- 主题色按钮 -->
     <simples-wrap>
         <simples-button>默认按钮</simples-button>
         <simples-button type="primary">主要按钮</simples-button>
@@ -13,7 +12,6 @@
 <script setup>
 import SimplesButton from "../Button.vue";
 import SimplesWrap from '../../wrap/wrap.vue'
-import AppType from "@varlet/cli/site/mobile/components/AppType";
 </script>
 
 <style>
