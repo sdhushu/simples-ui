@@ -15,17 +15,29 @@ createApp().use(Cell)
 
 ### 基本使用
 
+```vue
+import initCell from '../example/initCell.vue'
+```
+
 ```html
 <simples-cell> 这是单元格 </simples-cell>
 ```
 
 
 ### 显示描述
+```vue
+import descCell from '../example/descCell.vue'
+```
+
 ```html
 <simples-cell title="这是单元格" desc="描述" />
 ```
 
 ### 显示边框
+```vue
+import borderCell from '../example/borderCell.vue'
+```
+
 ```html
 <simples-cell border> 这是单元格 </simples-cell>
 ```
