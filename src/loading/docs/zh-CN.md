@@ -9,7 +9,11 @@ import { Loading } from 'simples-ui'
 createApp().use(Loading)
 ```
 
-### Loading 类型
+### Loading 基本使用
+
+```vue
+import initLoading from '../example/initLoading.vue'
+```
 
 ```html
 <simples-loading type="circle" />
@@ -19,7 +23,11 @@ createApp().use(Loading)
 <simples-loading type="disappear" />
 ```
 
-### Loading 颜色
+### Loading 自定义颜色
+```vue
+import colorLoading from '../example/colorLoading.vue'
+```
+
 ```html
 <simples-loading type="circle" style="color: #2979ff" />
 <simples-loading type="cube"  style="color: #2979ff"/>
@@ -28,14 +36,14 @@ createApp().use(Loading)
 <simples-loading type="disappear" style="color: #2979ff" />
 ```
 
-### Loading 大小
+### Loading 自定义尺寸
+```vue
+import sizeLoading from '../example/sizeLoading.vue'
+```
 
 ```html
-<simples-loading type="circle" size="small" />
-<simples-loading type="cube" size="small" />
-<simples-loading type="wave" size="small" />
-<simples-loading type="rect" size="small" />
-<simples-loading type="disappear" size="small" />
+  <simples-loading type="rect" color=" #2979ff" width="80px"  height="90px"/>
+  <simples-loading type="disappear" color=" #2979ff" width="120px"  height="100px"/>
 ```
 
 ## API
