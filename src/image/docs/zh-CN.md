@@ -14,42 +14,19 @@ createApp().use(Image)
 ```
 
 ### 基本使用
+```vue
+import initImage from '../example/initImage.vue'
+```
 
 ```html
 <simples-image src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
 ```
 
-### 填充模式
-
-```html
-<simples-image width="85px" height="85px" src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
-
-<simples-image 
-  width="85px" 
-  height="85px"
-  src="https://varlet.gitee.io/varlet-ui/cat.jpg" 
-/>
-
-<simples-image 
-  width="85px"
-  height="85px" 
-  src="https://varlet.gitee.io/varlet-ui/cat.jpg" 
-/>
-
-<simples-image 
-  width="85px"
-  height="85px"
-  src="https://varlet.gitee.io/varlet-ui/cat.jpg"
-/>
-
-<simples-image 
-  width="85px"
-  height="85px" 
-  src="https://varlet.gitee.io/varlet-ui/cat.jpg" 
-/>
-```
 
 ### 设置圆角
+```vue
+import roundImage from '../example/roundImage.vue'
+```
 
 ```html
 <simples-image
@@ -68,31 +45,15 @@ createApp().use(Image)
 ```
 
 
-### 使用本地路径
-在`.vue`文件中,`Vue组件`不会如同原生img一样被构建工具自动处理模块请求，所以需要手动导入图片资源。
-下面是不同构建工具的使用方式。
-
-
-#### Webpack
+### 自定义宽高
+```vue
+import whImage from '../example/whImage.vue'
+```
 
 ```html
-<simples-image :src="require('../../assets/logo.png')"/>
+  <simples-img width="85px" height="85px" src="https://varlet.gitee.io/varlet-ui/cat.jpg" />
 ```
 
-#### Vite
-```html
-<simples-image :src="logo"/>
-```
-
-```js
-import logo from '../../assets/logo.png'
-
-export default {
-  setup() {
-    return { logo }
-  }
-}
-```
 
 ## API
 
