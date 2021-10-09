@@ -14,6 +14,9 @@ createApp().use(Switch)
 ```
 
 ### 基本使用
+```vue
+import mainSwitch from '../example/mainSwitch.vue'
+```
 
 ```html
 <simples-switch v-model="value" />
@@ -33,22 +36,21 @@ export default {
 ```
 
 ### 不可用
+```vue
+import disableSwitch from '../example/disableSwitch.vue'
+```
 
 ```html
 <simples-switch v-model="value" disabled />
 <simples-switch v-model="value" readonly />
 ```
 
-### 自定义颜色
-
-```html
-<simples-switch v-model="value" :ripple="false" />
-<simples-switch v-model="value" color="#ff9f00" close-color="#f5cb90" />
-```
-
 ### 不同大小
 
 通过`size`属性改变Switch大小。
+```vue
+import sizeSwitch from '../example/sizeSwitch.vue'
+```
 
 ```html
 <simples-switch v-model="value" size="15" />
@@ -70,9 +72,6 @@ export default {
 | `disabled` | 是否禁用| _boolean_ | `false` |
 | `readonly` | 是否只读 | _boolean_ | `false` |
 | `loading` | 是否为加载状态 | _boolean_ | `false` |
-| `ripple` | 是否启用水波纹 | _boolean_ | `true` |
-| `color` | 打开状态下的颜色 | _string_ | `#2979ff` |
-| `loading-color` | 加载图标的颜色 | _string_ | `#fff` |
 | `close-color` | 关闭状态下的颜色 | _string_ | `#fff` |
 | `size` | switch的大小 | _string \| number_ | `20` |
 
