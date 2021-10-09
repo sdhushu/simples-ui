@@ -1,11 +1,22 @@
-# Vue 3 + Typescript + Vite
+<div class="varlet-introduce">
+  <img class="varlet-introduce__image" src="https://www.runoob.com/wp-content/uploads/2017/01/vue.png" />
+  <div class="varlet-introduce__name">Simples</div>  
+  <div class="varlet-introduce__des">面向Vue3的组件库</div>
+</div>
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+### 介绍
 
-## Recommended IDE Setup
+Simples是一个基于`Vue3`开发的组件库
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+### 特性
+- 1.提供十多个高质量通用组件
+- 2.组件十分轻量
+- 3.支持按需引入
 
-## Type Support For `.vue` Imports in TS
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+### PR & Issue
+使用过程中出现的问题可以到[github](https://github.com/sdhushu/simple)来给我们提[issue](https://github.com/sdhushu/simple/issues)，
+我们会在第一时间处理问题。
+
+### 开源协议
+组件库基于`MIT`协议。

@@ -1,6 +1,6 @@
 {
   "name": "simples-ui",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "author": "vike <1426732052@qq.com>",
   "scripts": {
     "dev": "varlet-cli dev",
