@@ -1,1 +1,0 @@
-import{T as e}from"./TabItem.2579711c.js";import{_ as t}from"./preload-helper.0a5f1423.js";import{q as a,d as r,o as m,k as s}from"./vendor.2c8e45dd.js";e.install=function(o){o.component(e.name,e)};const c=a({name:"TabItemExample",components:{[e.name]:e}});function p(o,_,i,d,f,l){const n=r("var-tab-item");return m(),s(n)}var x=t(c,[["render",p]]);export{x as default};

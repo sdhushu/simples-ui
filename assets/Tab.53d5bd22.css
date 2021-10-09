@@ -1,0 +1,1 @@
+.simple-tabs{width:auto;height:60px;display:flex;position:relative}.simple-line{width:0;height:3px;background-color:#409eff;transition:width 1s,height 1s,transform 1s}.simple-tab{padding:0 20px;font-size:14px;transition:2s linear;cursor:pointer;white-space:nowrap}.simple-wrap{height:100%;display:flex;position:relative;align-items:center}.simple-disabled{pointer-events:none}
