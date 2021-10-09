@@ -12,6 +12,9 @@ createApp().use(Chip)
 ### 纸片类型
 
 通过`type`属性设置纸片的类型。
+```vue
+import typeChip from '../example/typeChip.vue'
+```
 
 ```html
 <simples-chip type="primary">主要纸片</simples-chip>
@@ -25,6 +28,9 @@ createApp().use(Chip)
 ### 简单纸片
 
 通过`plain`属性将纸片设置为简单纸片。
+```vue
+import plainChip from '../example/plainChip.vue'
+```
 
 ```html
 <simples-chip plain type="primary">简单纸片</simples-chip>
@@ -33,6 +39,9 @@ createApp().use(Chip)
 ### 非圆角纸片
 
 通过把`round`属性设置为`false`来取消纸片的圆角样式。
+```vue
+import noRound from '../example/noRound.vue'
+```
 
 ```html
 <simples-chip :round="false" type="primary">非圆角纸片</simples-chip>
@@ -41,6 +50,9 @@ createApp().use(Chip)
 ### 纸片尺寸
 
 通过`size`属性设置纸片的尺寸。
+```vue
+import sizeChip from '../example/sizeChip.vue'
+```
 
 ```html
 <simples-chip size="large">大纸片</simples-chip>
@@ -52,6 +64,9 @@ createApp().use(Chip)
 ### 块级纸片
 
 通过`block`属性将纸片设置为块级纸片。
+```vue
+import blockChip from '../example/blockChip.vue'
+```
 
 ```html
 <simples-chip type="primary" block>块级纸片</simples-chip>
@@ -60,6 +75,9 @@ createApp().use(Chip)
 ### 可关闭纸片
 
 通过`closable`属性将纸片设置为可关闭纸片。
+```vue
+import closeChip from '../example/closeChip.vue'
+```
 
 ```html
 <simples-chip closable v-if="show" @close="show = false">可关闭纸片</simples-chip>
@@ -90,6 +108,9 @@ export default {
 ### 自定义颜色
 
 通过`color`和`text-color`属性设置纸片颜色。
+```vue
+import colorChip from '../example/colorChip.vue'
+```
 
 ```html
 <simples-chip color="#009688">纸片</simples-chip>
