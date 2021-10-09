@@ -1,0 +1,1 @@
+import{_ as r}from"./preload-helper.0a5f1423.js";import{o as s,c as a,N as o}from"./vendor.2c8e45dd.js";const t={name:"SimplesWrap"},p={class:"wrap"};function _(e,n,c,l,d,i){return s(),a("div",p,[o(e.$slots,"default")])}var u=r(t,[["render",_]]);export{u as S};
