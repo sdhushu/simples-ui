@@ -5,9 +5,6 @@
 使用`Tabs`、`Tab`实现选项卡组的切换。使用`TabsItems`、`TabItem`实现和选项卡组的视图联动。
 
 ### 引入
-```vue
-import example from '../example'
-```
 
 ```js
 import { createApp } from 'vue'
@@ -21,6 +18,9 @@ createApp()
 ```
 
 ### 基本使用
+```vue
+import mainTabs from '../example/mainTabs.vue'
+```
 
 ```html
 <simples-tabs v-model:active="active">
@@ -47,6 +47,10 @@ export default {
 Tabs默认通过`active`去匹配Tab的`index`来决定哪个选项卡被激活。
 您也可以通过给Tab设置`name`来命名选项卡，这时Tabs会优先匹配`name`。
 
+```vue
+import initTabs from '../example/initTabs.vue'
+```
+
 ```html
 <simples-tabs v-model:active="active">
   <simples-tab name="选项1">选项1</simples-tab>
@@ -68,6 +72,9 @@ export default {
 ```
 
 ### 修改样式
+```vue
+import colorTabs from '../example/colorTabs.vue'
+```
 
 ```html
  <simples-tabs
@@ -84,6 +91,9 @@ export default {
 ```
 
 ### 禁用选项
+```vue
+import disableTabs from '../example/disableTabs.vue'
+```
 
 ```html
 <simples-tabs
@@ -102,6 +112,9 @@ export default {
 
 
 ### 视图联动
+```vue
+import viewTabs from '../example/viewTabs.vue'
+```
 
 ```html
 <simples-tabs

@@ -46,6 +46,7 @@ export default {
       }
       event.path
         ? (() => {
+          console.log(event.path,333)
             for (let i = 0; i < event.path.length; i++) {
               event.path[i].className == "simple-wrap"
                 ? (() => {
@@ -75,6 +76,7 @@ export default {
   /* padding-left: 55px; */
   /* background-color: aqua; */
   display: flex;
+  position: relative;
 }
 .simple-line {
   width: 0;
