@@ -10,6 +10,9 @@ createApp().use(Card)
 ```
 
 ### 基本使用
+```vue
+import mainCard from '../example/mainCard.vue'
+```
 
 ```html
 <simples-card
@@ -19,6 +22,9 @@ createApp().use(Card)
 ```
 
 ### 显示副标题
+```vue
+import subCard from '../example/subCard.vue'
+```
 
 ```html
 <simples-card
@@ -29,6 +35,9 @@ createApp().use(Card)
 ```
 
 ### 显示图片
+```vue
+import imgCard from '../example/imgCard.vue'
+```
 
 ```html
 <simples-card
@@ -40,6 +49,9 @@ createApp().use(Card)
 ```
 
 ### 使用插槽
+```vue
+import slotCard from '../example/slotCard.vue'
+```
 
 ```html
 <simples-card
