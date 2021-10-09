@@ -10,7 +10,9 @@ createApp().use(Input)
 ```
 
 ### 基本使用
-
+```vue
+import mainInput from '../example/mainInput.vue'
+```
 
 ```js
 import { ref } from 'vue'
@@ -32,6 +34,10 @@ export default {
 
 如果只需要组件的基本功能，可以通过属性去除部分样式。
 
+```vue
+import plainInput from '../example/plainInput.vue'
+```
+
 ```html
 <simples-input 
   :hint="false" 
@@ -42,24 +48,36 @@ export default {
 ```
 
 ### 文本域
+```vue
+import areaInput from '../example/areaInput.vue'
+```
 
 ```html
 <simples-input placeholder="请输入文本" textarea v-model="value" />
 ```
 
 ### 最大长度
+```vue
+import maxInput from '../example/maxInput.vue'
+```
 
 ```html
 <simples-input placeholder="请输入文本" :maxlength="10" v-model="value" />
 ```
 
 ### 禁用
+```vue
+import disableInput from '../example/disableInput.vue'
+```
 
 ```html
 <simples-input placeholder="请输入文本" disabled v-model="value" />
 ```
 
 ### 只读
+```vue
+import readInput from '../example/readInput.vue'
+```
 
 ```html
 <simples-input placeholder="请输入文本" readonly v-model="value" />
