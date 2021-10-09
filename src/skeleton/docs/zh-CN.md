@@ -13,6 +13,9 @@ createApp().use(Skeleton)
 ```
 
 ### 基本使用
+```vue
+import mainSkeleton from '../example/mainSkeleton.vue'
+```
 
 ```html
 <simples-skeleton :loading="loading">加载的数据</simples-skeleton>
@@ -31,12 +34,18 @@ export default {
 ```
 
 ### 显示标题
+```vue
+import titleSkeleton from '../example/titleSkeleton.vue'
+```
 
 ```html
  <simples-skeleton title :loading="loading">加载的数据</simples-skeleton>
 ```
 
 ### 自定义段落高度
+```vue
+import sizeSkeleton from '../example/sizeSkeleton.vue'
+```
 
 ```html
 <simples-skeleton
@@ -50,25 +59,14 @@ export default {
 ```
 
 ### 显示头像
-
-```html
-<simples-skeleton
-  title
-  avatar
-  :rows="3"
-  :loading="loading"
->
-  加载的数据
-</simples-skeleton>
+```vue
+import avatarSkeleton from '../example/avatarSkeleton.vue'
 ```
 
-### 显示卡片
-
 ```html
 <simples-skeleton
   title
   avatar
-  card
   :rows="3"
   :loading="loading"
 >
@@ -85,10 +83,8 @@ export default {
 | --- | --- | --- | --- | 
 | `loading` | 加载状态，设置为 `true` 开启骨架屏 | _boolean_ | `true` |
 | `title` | 是否显示标题 | _boolean_ | `false` |
-| `card` | 是否显示卡片 | _boolean_ | `false` |
 | `avatar` | 是否显示头像 | _boolean_ | `false` |
 | `title-width` | 标题宽度 | _string \| number_ | `50%` |
-| `card-height` | 卡片高度 | _string \| number_ | `160px` |
 | `avatar-size` | 头像尺寸 | _string \| number_ | `34px` |
 | `rows` | 段落行数 | _string \| number_ | `3` |
 | `rows-width` | 段落每一行的宽度 | _number[] \| string[]_ | `['12px', '12px', '12px']` |
