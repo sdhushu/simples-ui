@@ -9,7 +9,7 @@ module.exports = {
   pc: {
     redirect: "/home",
     title: {
-      "zh-CN": "Simpls 面向Vue3的组件库",
+      "zh-CN": "Simples 面向Vue3的组件库",
       "en-US": "PC components built for Vue3"
     },
     header: {
