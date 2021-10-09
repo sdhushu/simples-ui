@@ -5,9 +5,6 @@
 图片放大预览，支持双击倍数放大，支持函数调用和组件调用两种方式。
 
 ### 引入
-```vue
-import example from '../example'
-```
 
 
 ```js
@@ -33,6 +30,7 @@ export default {
 
 ### 基本使用
 
+
 ```js
 ImagePreview('https://varlet.gitee.io/varlet-ui/cat.jpg')
 ```
@@ -56,6 +54,14 @@ ImagePreview({
 ## 组件使用
 
 ### 基本使用
+
+```vue
+import mainPreview from '../example/mainPreview.vue'
+```
+
+```vue
+import adressPreview from '../example/adressPreview.vue'
+```
 
 ```html
 <simples-button
