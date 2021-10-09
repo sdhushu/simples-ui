@@ -12,6 +12,9 @@ createApp().use(Badge)
 ### 徽标类型
 
 通过`type`属性设置徽标的类型。
+```vue
+import typeBadge from '../example/typeBadge.vue'
+```
 
 ```html
 <simples-badge type="primary" />
@@ -25,6 +28,9 @@ createApp().use(Badge)
 ### 圆点徽标
 
 通过`dot`属性将徽标设置为圆点。
+```vue
+import dotBadge from '../example/dotBadge.vue'
+```
 
 ```html
 <simples-badge type="danger" dot />
@@ -33,6 +39,9 @@ createApp().use(Badge)
 ### 自定义徽标内容
 
 通过`value`属性设置徽标的内容。
+```vue
+import valueBadge from '../example/valueBadge.vue'
+```
 
 ```html
 <simples-badge type="danger" value="badge" />
@@ -43,6 +52,9 @@ createApp().use(Badge)
 ### 最大值
 
 通过`value`和`max-value`控制徽标显示值的范围（当`value`与`max-value`都存在时生效）。
+```vue
+import maxBadge from '../example/maxBadge.vue'
+```
 
 ```html
 <simples-badge type="danger" :value="value" :max-value="maxValue" />
@@ -70,6 +82,9 @@ export default {
 ### 不同定位徽标
 
 通过`position`属性设置徽标的位置。
+```vue
+import positionBadge from '../example/positionBadge.vue'
+```
 
 ```html
 <simples-badge type="danger" position="right-top">
@@ -89,9 +104,12 @@ export default {
 ### 是否显示徽标
 
 通过`hidden`属性设置是否显示徽标。
+```vue
+import stateBadge from '../example/stateBadge.vue'
+```
 
 ```html
-<var-button @click="handleChange">点击改变状态</var-button>
+<simples-button @click="handleChange">点击改变状态</simples-button>
 <simples-badge type="danger" position="right-top" :hidden="hidden">
   <simples-chip plain :round="false" color="#009688">徽标</simples-chip>
 </simples-badge>
@@ -116,25 +134,6 @@ export default {
 }
 ```
 
-### 自定义徽标颜色
-
-通过`color`属性设置徽标的颜色。
-
-```html
-<simples-badge color="#6200ea" position="right-top">
-  <simples-chip plain :round="false" color="#009688">徽标</simples-chip>
-</simples-badge>
-```
-
-### 自定义徽标图标
-
-通过`icon`属性设置徽标图标。
-
-```html
-<simples-badge color="#6200ea" position="right-top" icon="notebook">
-  <simples-chip plain :round="false" color="#009688">徽标</simples-chip>
-</simples-badge>
-```
 
 ## API
 
